@@ -15,6 +15,10 @@
 @property (weak, nonatomic) IBOutlet UIView *centerView;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIButton *shareBtn;
+@property (weak, nonatomic) IBOutlet UIButton *collecBtn;
+@property (weak, nonatomic) IBOutlet UIButton *recordBtn;
+@property (weak, nonatomic) IBOutlet UIButton *orderBtn;
+@property (weak, nonatomic) IBOutlet UIButton *contactBtn;
 
 @end
 
@@ -34,6 +38,10 @@
     ViewRadius(_centerView, 3.5f);
     ViewRadius(_bottomView, 3.5f);
     [self.shareBtn buttonDistance:5 direction:left];
+    [self.collecBtn buttonDistance:8 direction:top];
+    [self.recordBtn buttonDistance:8 direction:top];
+    [self.orderBtn buttonDistance:8 direction:top];
+    [self.contactBtn buttonDistance:8 direction:top];
 //    [self addNOLogVC];
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -45,10 +53,6 @@
 }
 //我的收藏
 - (IBAction)goToMyCollect:(id)sender {
-    MemberMyCollectVC *memberMyCollectVC = [MemberMyCollectVC new];
-    [self.navigationController pushViewController:memberMyCollectVC animated:YES];
-}
-- (IBAction)goToCollec:(id)sender {
     MemberMyCollectVC *memberMyCollectVC = [MemberMyCollectVC new];
     [self.navigationController pushViewController:memberMyCollectVC animated:YES];
 }
