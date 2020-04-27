@@ -49,6 +49,11 @@
 		18CDED612456B0980001DF37 /* UIButton+direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED5F2456B0970001DF37 /* UIButton+direction.m */; };
 		18CDED662456B1C10001DF37 /* MemberFillMailBoxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED652456B1C10001DF37 /* MemberFillMailBoxVC.m */; };
 		18CDED6A2456CEEA0001DF37 /* MemberPayShensuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED692456CEEA0001DF37 /* MemberPayShensuVC.m */; };
+		18CDED7C2456E34E0001DF37 /* DCPagerConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED6F2456E34E0001DF37 /* DCPagerConsts.m */; };
+		18CDED7D2456E34E0001DF37 /* UIView+DCPagerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED752456E34E0001DF37 /* UIView+DCPagerFrame.m */; };
+		18CDED7E2456E34E0001DF37 /* DCPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED782456E34E0001DF37 /* DCPagerController.m */; };
+		18CDED7F2456E34E0001DF37 /* DCPagerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED7B2456E34E0001DF37 /* DCPagerProgressView.m */; };
+		18CDED832456E3AA0001DF37 /* MemberMyCollectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED822456E3AA0001DF37 /* MemberMyCollectVC.m */; };
 		A1E40B5D9A0D309F4267A130 /* libPods-MyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDE4870B5ED251A439A212C /* libPods-MyApp.a */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +160,18 @@
 		18CDED652456B1C10001DF37 /* MemberFillMailBoxVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberFillMailBoxVC.m; sourceTree = "<group>"; };
 		18CDED682456CEEA0001DF37 /* MemberPayShensuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberPayShensuVC.h; sourceTree = "<group>"; };
 		18CDED692456CEEA0001DF37 /* MemberPayShensuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberPayShensuVC.m; sourceTree = "<group>"; };
+		18CDED6E2456E34E0001DF37 /* DCPagerConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerConsts.h; sourceTree = "<group>"; };
+		18CDED6F2456E34E0001DF37 /* DCPagerConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerConsts.m; sourceTree = "<group>"; };
+		18CDED712456E34E0001DF37 /* DCPagerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerMacros.h; sourceTree = "<group>"; };
+		18CDED722456E34E0001DF37 /* DCPageKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPageKit.h; sourceTree = "<group>"; };
+		18CDED742456E34E0001DF37 /* UIView+DCPagerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCPagerFrame.h"; sourceTree = "<group>"; };
+		18CDED752456E34E0001DF37 /* UIView+DCPagerFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCPagerFrame.m"; sourceTree = "<group>"; };
+		18CDED772456E34E0001DF37 /* DCPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerController.h; sourceTree = "<group>"; };
+		18CDED782456E34E0001DF37 /* DCPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerController.m; sourceTree = "<group>"; };
+		18CDED7A2456E34E0001DF37 /* DCPagerProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerProgressView.h; sourceTree = "<group>"; };
+		18CDED7B2456E34E0001DF37 /* DCPagerProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerProgressView.m; sourceTree = "<group>"; };
+		18CDED812456E3AA0001DF37 /* MemberMyCollectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberMyCollectVC.h; sourceTree = "<group>"; };
+		18CDED822456E3AA0001DF37 /* MemberMyCollectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberMyCollectVC.m; sourceTree = "<group>"; };
 		8FDE4870B5ED251A439A212C /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A551027DD7BAEDDC77136BEC /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.debug.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FAEEBACE15FF91E03F856A70 /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.release.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -328,6 +345,7 @@
 		18423550245170DC0078C92C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				18CDED6B2456E34E0001DF37 /* CDDPagerController */,
 				189FD915245280C9000D1E94 /* NSUerdefult */,
 				18423551245170FE0078C92C /* 导航 */,
 				18423539245170620078C92C /* CYLTabBarController */,
@@ -456,11 +474,12 @@
 		189FD949245413B5000D1E94 /* Member */ = {
 			isa = PBXGroup;
 			children = (
-				18CDED672456CEB30001DF37 /* PayShusu */,
+				18CDED802456E3820001DF37 /* MyCollect */,
 				189FD95624541438000D1E94 /* MemberMainVC.h */,
 				189FD95724541438000D1E94 /* MemberMainVC.m */,
 				1812B6F0245676480043F408 /* MemeberNoLogVC.h */,
 				1812B6F1245676480043F408 /* MemeberNoLogVC.m */,
+				18CDED672456CEB30001DF37 /* PayShusu */,
 				1812B6F724568E020043F408 /* AccountManager */,
 				18CDED5A2456AA0C0001DF37 /* VisiteCode */,
 				1812B6F3245682A20043F408 /* ChangeVIP */,
@@ -526,6 +545,80 @@
 				18CDED692456CEEA0001DF37 /* MemberPayShensuVC.m */,
 			);
 			path = PayShusu;
+			sourceTree = "<group>";
+		};
+		18CDED6B2456E34E0001DF37 /* CDDPagerController */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED6C2456E34E0001DF37 /* Expand(扩展) */,
+				18CDED762456E34E0001DF37 /* Controller */,
+				18CDED792456E34E0001DF37 /* View */,
+			);
+			path = CDDPagerController;
+			sourceTree = "<group>";
+		};
+		18CDED6C2456E34E0001DF37 /* Expand(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED6D2456E34E0001DF37 /* Const(常量) */,
+				18CDED702456E34E0001DF37 /* Macros(宏) */,
+				18CDED732456E34E0001DF37 /* Category(分类) */,
+			);
+			path = "Expand(扩展)";
+			sourceTree = "<group>";
+		};
+		18CDED6D2456E34E0001DF37 /* Const(常量) */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED6E2456E34E0001DF37 /* DCPagerConsts.h */,
+				18CDED6F2456E34E0001DF37 /* DCPagerConsts.m */,
+			);
+			path = "Const(常量)";
+			sourceTree = "<group>";
+		};
+		18CDED702456E34E0001DF37 /* Macros(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED712456E34E0001DF37 /* DCPagerMacros.h */,
+				18CDED722456E34E0001DF37 /* DCPageKit.h */,
+			);
+			path = "Macros(宏)";
+			sourceTree = "<group>";
+		};
+		18CDED732456E34E0001DF37 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED742456E34E0001DF37 /* UIView+DCPagerFrame.h */,
+				18CDED752456E34E0001DF37 /* UIView+DCPagerFrame.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		18CDED762456E34E0001DF37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED772456E34E0001DF37 /* DCPagerController.h */,
+				18CDED782456E34E0001DF37 /* DCPagerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18CDED792456E34E0001DF37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED7A2456E34E0001DF37 /* DCPagerProgressView.h */,
+				18CDED7B2456E34E0001DF37 /* DCPagerProgressView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18CDED802456E3820001DF37 /* MyCollect */ = {
+			isa = PBXGroup;
+			children = (
+				18CDED812456E3AA0001DF37 /* MemberMyCollectVC.h */,
+				18CDED822456E3AA0001DF37 /* MemberMyCollectVC.m */,
+			);
+			path = MyCollect;
 			sourceTree = "<group>";
 		};
 		BB29E0B9F5D5958E35B6BB91 /* Frameworks */ = {
@@ -696,14 +789,19 @@
 			files = (
 				184234F724516D8E0078C92C /* AppDelegate.m in Sources */,
 				18423549245170620078C92C /* UIView+CYLTabBarControllerExtention.m in Sources */,
+				18CDED7D2456E34E0001DF37 /* UIView+DCPagerFrame.m in Sources */,
+				18CDED832456E3AA0001DF37 /* MemberMyCollectVC.m in Sources */,
+				18CDED7C2456E34E0001DF37 /* DCPagerConsts.m in Sources */,
 				189FD95824541438000D1E94 /* MemberMainVC.m in Sources */,
 				1842353524516FE20078C92C /* PPInterfacedConst.m in Sources */,
 				18CDED662456B1C10001DF37 /* MemberFillMailBoxVC.m in Sources */,
+				18CDED7F2456E34E0001DF37 /* DCPagerProgressView.m in Sources */,
 				184235572451713E0078C92C /* CYLTabBarControllerConfig.m in Sources */,
 				1842353724516FE20078C92C /* PPNetworkHelper.m in Sources */,
 				189FD94C245413F2000D1E94 /* LongMovieMainVC.m in Sources */,
 				189FD96C24555753000D1E94 /* ForgetPswMainVC.m in Sources */,
 				189FD918245280C9000D1E94 /* WJUserdefault.m in Sources */,
+				18CDED7E2456E34E0001DF37 /* DCPagerController.m in Sources */,
 				189FD94F24541409000D1E94 /* ShortMovieMainVC.m in Sources */,
 				189FD92024528193000D1E94 /* AppDelegate+Serve.m in Sources */,
 				1812B6F2245676480043F408 /* MemeberNoLogVC.m in Sources */,

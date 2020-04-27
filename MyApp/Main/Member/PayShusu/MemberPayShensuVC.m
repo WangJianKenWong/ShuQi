@@ -28,6 +28,9 @@
     _codeTf.leftView = view;
     _codeTf.leftViewMode = UITextFieldViewModeAlways;
 }
+- (IBAction)addPhoto:(id)sender {
+    DLog(@"122");
+}
 
 
 @end

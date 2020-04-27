@@ -8,6 +8,7 @@
 
 #import "MemberMainVC.h"
 #import "MemeberNoLogVC.h"
+#import "MemberMyCollectVC.h"
 
 @interface MemberMainVC ()
 @property (weak, nonatomic) IBOutlet UIView *topView;
@@ -42,12 +43,23 @@
     }
     self.tableView.contentOffset = offset;
 }
+//我的收藏
+- (IBAction)goToMyCollect:(id)sender {
+    MemberMyCollectVC *memberMyCollectVC = [MemberMyCollectVC new];
+    [self.navigationController pushViewController:memberMyCollectVC animated:YES];
+}
+- (IBAction)goToCollec:(id)sender {
+    MemberMyCollectVC *memberMyCollectVC = [MemberMyCollectVC new];
+    [self.navigationController pushViewController:memberMyCollectVC animated:YES];
+}
+
 //兑换vip
 - (IBAction)goToChangeVip:(id)sender {
     [self goToMemberDetailVC:@"MemberChangeVIP"];
 }
 //支付申诉
 - (IBAction)toToPayShensu:(id)sender {
+    [self goToMemberDetailVC:@"MemberPayShensuVC"];
 }
 //填写邀请码
 - (IBAction)goToVisiteCode:(id)sender {

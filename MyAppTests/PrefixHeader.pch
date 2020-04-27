@@ -12,6 +12,7 @@
 #import "AFNetworking.h"
 #import "YYKit.h"
 #import "Masonry.h"
+#import "DCPagerController.h"
 //MBProgress
 #import "MBProgressHUD+XY.h"
 #import "UIButton+direction.h"
