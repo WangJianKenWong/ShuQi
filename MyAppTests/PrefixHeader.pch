@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  MyApp
+//
+//  Created by apple on 2020/4/23.
+//  Copyright © 2020 tii. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//第三方库
+#import "AFNetworking.h"
+#import "YYKit.h"
+#import "Masonry.h"
+//MBProgress
+#import "MBProgressHUD+XY.h"
+#import "UIButton+direction.h"
+//宏定义
+#import "UikitMacro.h"
+//基类
+#import "WJUserdefault.h"
+//#import "FontAndColorMacro.h"
+//#import "CommonMacro.h"
+#import "PPHTTPRequest.h"
+#endif /* PrefixHeader_pch */
