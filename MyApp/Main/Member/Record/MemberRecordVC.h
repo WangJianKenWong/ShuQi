@@ -1,8 +1,8 @@
 //
-//  FindMainVC.h
+//  MemberRecordVC.h
 //  MyApp
 //
-//  Created by apple on 2020/4/25.
+//  Created by apple on 2020/4/28.
 //  Copyright © 2020 tii. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FindMainVC : DCPagerController
+@interface MemberRecordVC : DCPagerController
 
 @end
 

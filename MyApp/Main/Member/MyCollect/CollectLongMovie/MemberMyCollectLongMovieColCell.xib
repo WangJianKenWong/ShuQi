@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemberMyCollectLongMovieColCell" id="5Ly-qx-7LI" customClass="MemberMyCollectLongMovieColCell">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="237"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="139" height="237"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ug5-xg-xmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="139" height="139"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ug5-xg-xmQ" secondAttribute="height" id="6JL-fN-7Ms"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-Dx-FRL">
+                        <rect key="frame" x="0.0" y="146" width="139" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ug5-xg-xmQ" secondAttribute="trailing" id="2qu-e9-2P9"/>
+                <constraint firstItem="nfq-Dx-FRL" firstAttribute="leading" secondItem="5Ly-qx-7LI" secondAttribute="leading" id="Bkx-gM-Byh"/>
+                <constraint firstItem="nfq-Dx-FRL" firstAttribute="top" secondItem="ug5-xg-xmQ" secondAttribute="bottom" constant="7" id="RKN-WP-EdJ"/>
+                <constraint firstAttribute="trailing" secondItem="nfq-Dx-FRL" secondAttribute="trailing" id="xlJ-co-eDY"/>
+                <constraint firstItem="ug5-xg-xmQ" firstAttribute="top" secondItem="5Ly-qx-7LI" secondAttribute="top" id="zG2-sk-s9T"/>
+                <constraint firstItem="ug5-xg-xmQ" firstAttribute="leading" secondItem="5Ly-qx-7LI" secondAttribute="leading" id="zkI-Ip-Nlt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Yvx-Ti-Ycx"/>
+            <size key="customSize" width="139" height="237"/>
+            <connections>
+                <outlet property="longMovieImg" destination="ug5-xg-xmQ" id="uJN-RS-dyv"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="209.26339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="02" width="126" height="126"/>
+    </resources>
+</document>

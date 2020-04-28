@@ -9,6 +9,8 @@
 #import "MemberMainVC.h"
 #import "MemeberNoLogVC.h"
 #import "MemberMyCollectVC.h"
+#import "MemberMyOrderVC.h"
+#import "MemberRecordVC.h"
 
 @interface MemberMainVC ()
 @property (weak, nonatomic) IBOutlet UIView *topView;
@@ -55,6 +57,20 @@
 - (IBAction)goToMyCollect:(id)sender {
     MemberMyCollectVC *memberMyCollectVC = [MemberMyCollectVC new];
     [self.navigationController pushViewController:memberMyCollectVC animated:YES];
+}
+//观看记录
+- (IBAction)goToRecord:(id)sender {
+    MemberRecordVC *memberRecordVC = [MemberRecordVC new];
+    [self.navigationController pushViewController:memberRecordVC animated:YES];
+}
+//我的订单
+- (IBAction)goToMyOrder:(id)sender {
+    MemberMyOrderVC *memberMyOrderVC = [MemberMyOrderVC new];
+    [self.navigationController pushViewController:memberMyOrderVC animated:YES];
+}
+//联系客服
+- (IBAction)goToContact:(id)sender {
+    
 }
 
 //兑换vip

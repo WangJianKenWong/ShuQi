@@ -1,18 +1,18 @@
 //
-//  MemberMyCollectVC.m
+//  MemberRecordVC.m
 //  MyApp
 //
-//  Created by apple on 2020/4/27.
+//  Created by apple on 2020/4/28.
 //  Copyright © 2020 tii. All rights reserved.
 //
 
-#import "MemberMyCollectVC.h"
+#import "MemberRecordVC.h"
 
-@interface MemberMyCollectVC ()
+@interface MemberRecordVC ()
 
 @end
 
-@implementation MemberMyCollectVC
+@implementation MemberRecordVC
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -28,7 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的收藏";
+    self.title = @"观看记录";
     [self setUpAllChildViewController];
     [self setUpDisplayStyle:^(UIColor *__autoreleasing *titleScrollViewBgColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIColor *__autoreleasing *proColor, UIFont *__autoreleasing *titleFont, CGFloat *titleButtonWidth, BOOL *isShowPregressView, BOOL *isOpenStretch, BOOL *isOpenShade) {
         *titleFont = [UIFont boldSystemFontOfSize:16];
@@ -41,7 +41,7 @@
         *isShowPregressView = YES;                      //是否开启标题下部Pregress指示器
         *isOpenStretch = YES;                           //是否开启指示器拉伸效果
         *isOpenShade = YES;                             //是否开启字体渐变
-        *titleButtonWidth = kScreenWidth/3.f;           //有默认值
+        *titleButtonWidth = kScreenWidth*0.5f;           //有默认值
     }];
     [self setUpProgressAttribute:^(CGFloat *progressLength, CGFloat *progressHeight) {//progressLength 设置底部progress指示器的长度，有默认值为按钮的宽度的百分之56  progressHeight默认高度4(并且不能大于10)
         *progressLength = 20;
@@ -50,8 +50,8 @@
 }
 #pragma mark - 添加所有子控制器
 - (void)setUpAllChildViewController{
-    NSArray *titles = @[@"明星", @"长片", @"短片"];
-    NSArray *vcNames = @[@"MemberMyCollectStartVC", @"MemberMyCollectLongMovieVC", @"MemberMyCollectShortMovieVC"];
+    NSArray *titles = @[@"长片", @"短片"];
+    NSArray *vcNames = @[@"MemberRecordLongMovieVC", @"MemberRecordShortMovieVC"];
     for (NSInteger i = 0; i < titles.count; i++) {
         UIViewController* vc = [self stringChangeToClass:vcNames[i]];
         if (vc) {
