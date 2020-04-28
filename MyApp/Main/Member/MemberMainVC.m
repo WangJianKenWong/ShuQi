@@ -53,6 +53,11 @@
     }
     self.tableView.contentOffset = offset;
 }
+//推广
+- (IBAction)goToProvote:(id)sender {
+    [self goToMemberDetailVC:@"MemberProvoteMainVC"];
+}
+
 //我的收藏
 - (IBAction)goToMyCollect:(id)sender {
     MemberMyCollectVC *memberMyCollectVC = [MemberMyCollectVC new];

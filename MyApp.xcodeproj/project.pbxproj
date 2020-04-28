@@ -73,6 +73,7 @@
 		18CDEDBD245811600001DF37 /* MemberRecordShortMovieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDEDBC245811600001DF37 /* MemberRecordShortMovieVC.m */; };
 		18CDEDC1245811960001DF37 /* MemberRecordShortMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDEDBF245811960001DF37 /* MemberRecordShortMovieCell.m */; };
 		18CDEDC2245811960001DF37 /* MemberRecordShortMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CDEDC0245811960001DF37 /* MemberRecordShortMovieCell.xib */; };
+		18CDEDC62458359C0001DF37 /* MemberProvoteMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDEDC52458359C0001DF37 /* MemberProvoteMainVC.m */; };
 		A1E40B5D9A0D309F4267A130 /* libPods-MyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDE4870B5ED251A439A212C /* libPods-MyApp.a */; };
 /* End PBXBuildFile section */
 
@@ -223,6 +224,8 @@
 		18CDEDBE245811960001DF37 /* MemberRecordShortMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberRecordShortMovieCell.h; sourceTree = "<group>"; };
 		18CDEDBF245811960001DF37 /* MemberRecordShortMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberRecordShortMovieCell.m; sourceTree = "<group>"; };
 		18CDEDC0245811960001DF37 /* MemberRecordShortMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberRecordShortMovieCell.xib; sourceTree = "<group>"; };
+		18CDEDC42458359C0001DF37 /* MemberProvoteMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberProvoteMainVC.h; sourceTree = "<group>"; };
+		18CDEDC52458359C0001DF37 /* MemberProvoteMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberProvoteMainVC.m; sourceTree = "<group>"; };
 		8FDE4870B5ED251A439A212C /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A551027DD7BAEDDC77136BEC /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.debug.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FAEEBACE15FF91E03F856A70 /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.release.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -525,6 +528,7 @@
 		189FD949245413B5000D1E94 /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				18CDEDC3245835730001DF37 /* Provote */,
 				18CDEDAD24580BF20001DF37 /* Record */,
 				18CDEDA42457D2BB0001DF37 /* MyOrder */,
 				18CDED802456E3820001DF37 /* MyCollect */,
@@ -760,6 +764,15 @@
 			path = RecordShortMovie;
 			sourceTree = "<group>";
 		};
+		18CDEDC3245835730001DF37 /* Provote */ = {
+			isa = PBXGroup;
+			children = (
+				18CDEDC42458359C0001DF37 /* MemberProvoteMainVC.h */,
+				18CDEDC52458359C0001DF37 /* MemberProvoteMainVC.m */,
+			);
+			path = Provote;
+			sourceTree = "<group>";
+		};
 		BB29E0B9F5D5958E35B6BB91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -961,6 +974,7 @@
 				1842354B245170620078C92C /* CYLTabBarController.m in Sources */,
 				18CDEDAB2457D5EC0001DF37 /* MemberMyOrderCell.m in Sources */,
 				18CDED5D2456AA280001DF37 /* MemberVisiteCodeVC.m in Sources */,
+				18CDEDC62458359C0001DF37 /* MemberProvoteMainVC.m in Sources */,
 				1842354A245170620078C92C /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */,
 				18CDEDBD245811600001DF37 /* MemberRecordShortMovieVC.m in Sources */,
 				189FD95C24551E48000D1E94 /* LogUserNameVC.m in Sources */,
