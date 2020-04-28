@@ -51,14 +51,22 @@
 #pragma mark - 添加所有子控制器
 - (void)setUpAllChildViewController{
     NSArray *titles = @[@"明星", @"长片", @"短片"];
+    NSArray *vcNames = @[@"MemberMyCollectStartVC", @"MemberMyCollectLongMovieVC", @"MemberMyCollectShortMovieVC"];
     for (NSInteger i = 0; i < titles.count; i++) {
-        UIViewController *vc = [UIViewController new];
-        vc.title = titles[i];
-        UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 10, ScreenW, 0.5)];
-        backView.backgroundColor = [UIColor colorWithHexString:@"D8D8D8"];
-        [vc.view addSubview:backView];
-        [self addChildViewController:vc];
+        UIViewController* vc = [self stringChangeToClass:vcNames[i]];
+        if (vc) {
+            UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 10, ScreenW, 0.5)];
+            backView.backgroundColor = [UIColor colorWithHexString:@"D8D8D8"];
+            vc.title = titles[i];
+            [vc.view addSubview:backView];
+            [self addChildViewController:vc];        }
     }
 }
-
+- (UIViewController*)stringChangeToClass:(NSString *)str {
+    id vc = [[NSClassFromString(str) alloc]init];
+    if ([vc isKindOfClass:[UIViewController class]]) {
+        return vc;
+    }
+    return nil;
+}
 @end
