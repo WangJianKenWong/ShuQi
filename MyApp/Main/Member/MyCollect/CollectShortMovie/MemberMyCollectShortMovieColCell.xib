@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="139" height="237"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YUw-NH-dK5">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="long" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YUw-NH-dK5">
                         <rect key="frame" x="0.0" y="0.0" width="139" height="139"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="YUw-NH-dK5" secondAttribute="height" id="1rn-0S-gB1"/>
@@ -49,6 +49,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="02" width="126" height="126"/>
+        <image name="long" width="171.5" height="227.5"/>
     </resources>
 </document>
