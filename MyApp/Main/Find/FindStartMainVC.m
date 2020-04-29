@@ -32,6 +32,7 @@
     style.scrollContentView = NO;
     style.adjustCoverOrLineWidth = YES;
     style.coverHeight = 30;
+    style.segmentHeight = 50;
     self.titles = [self readLocalFileWithName:@"findStart"];
     // 初始化
     ZJScrollPageView *scrollPageView = [[ZJScrollPageView alloc] initWithFrame:CGRectMake(0, 15, self.view.bounds.size.width, self.view.bounds.size.height - 15) segmentStyle:style titles:self.titles parentViewController:self delegate:self];
