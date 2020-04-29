@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FindStartSecondDetailColCell" id="qKK-w1-LcU" customClass="FindStartSecondDetailColCell">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="237"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="139" height="237"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="long" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gk-Cr-NP0">
+                        <rect key="frame" x="0.0" y="0.0" width="139" height="139"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2gk-Cr-NP0" secondAttribute="height" id="gLS-da-2lg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3l-tN-X85">
+                        <rect key="frame" x="0.0" y="146" width="139" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFp-mD-xBi">
+                        <rect key="frame" x="99" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3QK-iP-56E"/>
+                            <constraint firstAttribute="width" constant="40" id="9E0-PO-60Z"/>
+                        </constraints>
+                        <state key="normal" image="member_add_collect"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vFp-mD-xBi" secondAttribute="trailing" id="Gpo-jw-x2A"/>
+                <constraint firstItem="2gk-Cr-NP0" firstAttribute="leading" secondItem="qKK-w1-LcU" secondAttribute="leading" id="OPz-Qe-igc"/>
+                <constraint firstItem="o3l-tN-X85" firstAttribute="top" secondItem="2gk-Cr-NP0" secondAttribute="bottom" constant="7" id="WVj-Iw-KJt"/>
+                <constraint firstItem="o3l-tN-X85" firstAttribute="leading" secondItem="qKK-w1-LcU" secondAttribute="leading" id="cE4-7q-5iy"/>
+                <constraint firstItem="2gk-Cr-NP0" firstAttribute="top" secondItem="qKK-w1-LcU" secondAttribute="top" id="i0U-XJ-fz9"/>
+                <constraint firstAttribute="trailing" secondItem="o3l-tN-X85" secondAttribute="trailing" id="mAx-Dj-nZh"/>
+                <constraint firstAttribute="trailing" secondItem="2gk-Cr-NP0" secondAttribute="trailing" id="s4q-87-BeP"/>
+                <constraint firstItem="vFp-mD-xBi" firstAttribute="top" secondItem="qKK-w1-LcU" secondAttribute="top" id="tAp-oJ-akV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Y7Q-jM-dSZ"/>
+            <size key="customSize" width="139" height="237"/>
+            <connections>
+                <outlet property="longMovieImg" destination="2gk-Cr-NP0" id="Hdx-Du-8Xe"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="209.26339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="long" width="171.5" height="227.5"/>
+        <image name="member_add_collect" width="20" height="20"/>
+    </resources>
+</document>

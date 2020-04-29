@@ -46,7 +46,7 @@
 #pragma mark - 添加所有子控制器
 - (void)setUpAllChildViewController{
     NSArray *titles = @[@"明星", @"长片分类", @"短片分类"];
-    NSArray *vcNames = @[@"MemberMyCollectStartVC", @"MemberMyCollectLongMovieVC", @"MemberMyCollectLongMovieVC"];
+    NSArray *vcNames = @[@"FindStartMainVC", @"MemberMyCollectLongMovieVC", @"MemberMyCollectLongMovieVC"];
     for (NSInteger i = 0; i < titles.count; i++) {
         UIViewController* vc = [self stringChangeToClass:vcNames[i]];
         if (vc) {
