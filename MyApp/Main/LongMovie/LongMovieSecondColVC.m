@@ -50,8 +50,8 @@ static NSString * const reuseIdentifier = @"MemberMyCollectLongMovieColCell";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    CGFloat widthColView = (KScreenWidth - 14*2-20) / 3.f;
-    CGFloat heightColView = (KScreenWidth - 14*2-20) / 3.f+40;
+    CGFloat widthColView = (KScreenWidth - 14*2-30) / 3.f;
+    CGFloat heightColView = (KScreenWidth - 14*2-30) / 3.f+40;
     return CGSizeMake(widthColView, heightColView);
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
@@ -69,7 +69,7 @@ static NSString * const reuseIdentifier = @"MemberMyCollectLongMovieColCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    MemberMyCollectLongMovieColCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     return cell;
 }
 

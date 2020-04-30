@@ -89,19 +89,6 @@
 
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
     NSLog(@"%ld---------", index);
-//    if (index == 0) {
-//        LongMovieSecondColVC *childVc = (LongMovieSecondColVC *)reuseViewController;
-//        if (childVc == nil) {
-//            childVc = [[LongMovieSecondColVC alloc] init];
-//        }
-//        return childVc;
-//    }  else {
-//        LongMovieSecondColVC *childVc = (LongMovieSecondColVC *)reuseViewController;
-//        if (childVc == nil) {
-//            childVc = [[LongMovieSecondColVC alloc] init];
-//        }
-//        return childVc;
-//    }
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Member" bundle:nil];
     LongMovieSecondColVC *vc = [sb instantiateViewControllerWithIdentifier:@"LongMovieSecondColVC"];
     return vc;
