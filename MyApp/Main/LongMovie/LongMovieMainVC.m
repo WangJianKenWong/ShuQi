@@ -8,7 +8,7 @@
 
 #import "LongMovieMainVC.h"
 #import "ZJScrollPageView.h"
-#import "LongMovieSecondVC.h"
+#import "LongMovieSecondColVC.h"
 
 @interface LongMovieMainVC ()<ZJScrollPageViewDelegate>
 
@@ -89,19 +89,22 @@
 
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
     NSLog(@"%ld---------", index);
-    if (index == 0) {
-        LongMovieSecondVC *childVc = (LongMovieSecondVC *)reuseViewController;
-        if (childVc == nil) {
-            childVc = [[LongMovieSecondVC alloc] init];
-        }
-        return childVc;
-    }  else {
-        LongMovieSecondVC *childVc = (LongMovieSecondVC *)reuseViewController;
-        if (childVc == nil) {
-            childVc = [[LongMovieSecondVC alloc] init];
-        }
-        return childVc;
-    }
+//    if (index == 0) {
+//        LongMovieSecondColVC *childVc = (LongMovieSecondColVC *)reuseViewController;
+//        if (childVc == nil) {
+//            childVc = [[LongMovieSecondColVC alloc] init];
+//        }
+//        return childVc;
+//    }  else {
+//        LongMovieSecondColVC *childVc = (LongMovieSecondColVC *)reuseViewController;
+//        if (childVc == nil) {
+//            childVc = [[LongMovieSecondColVC alloc] init];
+//        }
+//        return childVc;
+//    }
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Member" bundle:nil];
+    LongMovieSecondColVC *vc = [sb instantiateViewControllerWithIdentifier:@"LongMovieSecondColVC"];
+    return vc;
 }
 /*
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

@@ -207,7 +207,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="member_share" translatesAutoresizingMaskIntoConstraints="NO" id="3x3-0I-JcC">
-                                                    <rect key="frame" x="307" y="69.666666666666671" width="107" height="39"/>
+                                                    <rect key="frame" x="307" y="69.666666666666671" width="107.00000000000003" height="39"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="107" id="0eN-VT-jRg"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="4Sf-m4-vS1"/>
@@ -291,7 +291,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="386" height="41.666666666666664"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="member_account" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-dm-fEm">
-                                                                    <rect key="frame" x="13" y="15.333333333333314" width="15" height="11"/>
+                                                                    <rect key="frame" x="12.999999999999998" y="15.333333333333314" width="15.000000000000002" height="11"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="11" id="AWn-Of-LvJ"/>
                                                                         <constraint firstAttribute="width" constant="15" id="gG3-E1-FFA"/>
@@ -492,7 +492,7 @@
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg2-pM-fJ1">
-                                                    <rect key="frame" x="307" y="73" width="107" height="32"/>
+                                                    <rect key="frame" x="307" y="81" width="107" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <state key="normal" title="分享立得VIP" image="member_gift">
                                                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -654,7 +654,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLr-z5-TZJ">
-                                <rect key="frame" x="70" y="109" width="274" height="40"/>
+                                <rect key="frame" x="70" y="109" width="274" height="40.000000000000014"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="23T-Eo-tGA"/>
                                 </constraints>
@@ -701,7 +701,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHk-Pd-F6x">
-                                <rect key="frame" x="70" y="109" width="274" height="40"/>
+                                <rect key="frame" x="70" y="109" width="274" height="40.000000000000014"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Tiz-hz-LOr"/>
                                 </constraints>
@@ -848,7 +848,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssh-fw-8G1">
-                                <rect key="frame" x="67" y="212" width="280" height="40"/>
+                                <rect key="frame" x="67" y="212" width="280" height="40.000000000000014"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="90s-pq-fQn"/>
                                 </constraints>
@@ -957,7 +957,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-ve-ZPf">
-                                <rect key="frame" x="67" y="212" width="280" height="40"/>
+                                <rect key="frame" x="67" y="212" width="280" height="40.000000000000014"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="oDG-aJ-Sv2"/>
                                 </constraints>
@@ -1353,7 +1353,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhp-bR-wna">
-                                        <rect key="frame" x="50" y="102" width="160" height="40"/>
+                                        <rect key="frame" x="50" y="102" width="160" height="40.000000000000014"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Vpd-FN-e9C"/>
                                         </constraints>
@@ -1393,6 +1393,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4D-vq-qaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-59" y="757"/>
+        </scene>
+        <!--Long Movie Second ColVC-->
+        <scene sceneID="F38-ZD-LJP">
+            <objects>
+                <collectionViewController storyboardIdentifier="LongMovieSecondColVC" id="2zZ-4V-pmb" customClass="LongMovieSecondColVC" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Ym6-zd-Lqs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <inset key="scrollIndicatorInsets" minX="14" minY="15" maxX="14" maxY="14"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ttT-Uo-xIw">
+                            <size key="itemSize" width="160" height="187"/>
+                            <size key="headerReferenceSize" width="50" height="145"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemberMyCollectLongMovieColCell" id="00i-RS-zGF" customClass="MemberMyCollectLongMovieColCell">
+                                <rect key="frame" x="0.0" y="145" width="139" height="237"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="139" height="237"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="long" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZx-5L-jwR">
+                                            <rect key="frame" x="0.0" y="0.0" width="139" height="139"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-1x-F2c">
+                                            <rect key="frame" x="0.0" y="146" width="139" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="qWI-iI-EXV"/>
+                                <size key="customSize" width="139" height="237"/>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LongMovieSectionHaederColCell" id="mVW-d0-S94">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyV-dD-Vl9">
+                                    <rect key="frame" x="336" y="14" width="64" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="64" id="0wo-XU-Uza"/>
+                                        <constraint firstAttribute="height" constant="28" id="S6R-Vf-u11"/>
+                                    </constraints>
+                                    <state key="normal" title="筛选"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="RyV-dD-Vl9" secondAttribute="trailing" constant="14" id="owr-UE-4Hz"/>
+                                <constraint firstItem="RyV-dD-Vl9" firstAttribute="top" secondItem="mVW-d0-S94" secondAttribute="top" constant="14" id="znT-J6-5lT"/>
+                            </constraints>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="LongMovieSectionFooterColCell" id="HL9-Bo-0vr">
+                            <rect key="frame" x="0.0" y="382" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIP-V4-H50">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="dIP-V4-H50" secondAttribute="bottom" id="Gtj-2J-R4v"/>
+                                <constraint firstItem="dIP-V4-H50" firstAttribute="top" secondItem="HL9-Bo-0vr" secondAttribute="top" id="Vvq-nZ-YgH"/>
+                                <constraint firstAttribute="trailing" secondItem="dIP-V4-H50" secondAttribute="trailing" id="eDc-bN-zG7"/>
+                                <constraint firstItem="dIP-V4-H50" firstAttribute="leading" secondItem="HL9-Bo-0vr" secondAttribute="leading" id="ipY-Gt-30q"/>
+                            </constraints>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="2zZ-4V-pmb" id="a2x-qQ-5s1"/>
+                            <outlet property="delegate" destination="2zZ-4V-pmb" id="bEU-eO-2XI"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZI-74-cG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321.7391304347827" y="94.419642857142847"/>
         </scene>
     </scenes>
     <resources>
