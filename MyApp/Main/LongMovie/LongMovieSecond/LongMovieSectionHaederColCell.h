@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LongMovieSectionHaederColCell : UICollectionReusableView
 @property (weak, nonatomic) IBOutlet UIButton *chooseBtn;
+@property (weak, nonatomic) IBOutlet UIView *adBannerView;
 
 @end
 

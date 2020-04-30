@@ -59,6 +59,13 @@
 		189FD969245537F3000D1E94 /* RegMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD968245537F3000D1E94 /* RegMainVC.m */; };
 		189FD96C24555753000D1E94 /* ForgetPswMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD96B24555753000D1E94 /* ForgetPswMainVC.m */; };
 		189FD96E24555BC6000D1E94 /* Member.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189FD96D24555BC6000D1E94 /* Member.storyboard */; };
+		18AE2129245AB57A00DB60EC /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE211D245AB57A00DB60EC /* SDCycleScrollView.m */; };
+		18AE212A245AB57A00DB60EC /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE211E245AB57A00DB60EC /* UIView+SDExtension.m */; };
+		18AE212B245AB57A00DB60EC /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE211F245AB57A00DB60EC /* SDCollectionViewCell.m */; };
+		18AE212C245AB57A00DB60EC /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE2122245AB57A00DB60EC /* TADotView.m */; };
+		18AE212D245AB57A00DB60EC /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE2123245AB57A00DB60EC /* TAPageControl.m */; };
+		18AE212E245AB57A00DB60EC /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE2124245AB57A00DB60EC /* TAAnimatedDotView.m */; };
+		18AE212F245AB57A00DB60EC /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE2125245AB57A00DB60EC /* TAAbstractDotView.m */; };
 		18BB604724597146007DF790 /* FindStartSecondDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB604624597146007DF790 /* FindStartSecondDetailVC.m */; };
 		18CDED5D2456AA280001DF37 /* MemberVisiteCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED5C2456AA280001DF37 /* MemberVisiteCodeVC.m */; };
 		18CDED612456B0980001DF37 /* UIButton+direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDED5F2456B0970001DF37 /* UIButton+direction.m */; };
@@ -225,6 +232,20 @@
 		189FD96A24555753000D1E94 /* ForgetPswMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetPswMainVC.h; sourceTree = "<group>"; };
 		189FD96B24555753000D1E94 /* ForgetPswMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetPswMainVC.m; sourceTree = "<group>"; };
 		189FD96D24555BC6000D1E94 /* Member.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Member.storyboard; sourceTree = "<group>"; };
+		18AE211A245AB57A00DB60EC /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		18AE211B245AB57A00DB60EC /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		18AE211C245AB57A00DB60EC /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		18AE211D245AB57A00DB60EC /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		18AE211E245AB57A00DB60EC /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		18AE211F245AB57A00DB60EC /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		18AE2121245AB57A00DB60EC /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		18AE2122245AB57A00DB60EC /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		18AE2123245AB57A00DB60EC /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		18AE2124245AB57A00DB60EC /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		18AE2125245AB57A00DB60EC /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		18AE2126245AB57A00DB60EC /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		18AE2127245AB57A00DB60EC /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		18AE2128245AB57A00DB60EC /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
 		18BB604524597146007DF790 /* FindStartSecondDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindStartSecondDetailVC.h; sourceTree = "<group>"; };
 		18BB604624597146007DF790 /* FindStartSecondDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindStartSecondDetailVC.m; sourceTree = "<group>"; };
 		18CDED5B2456AA280001DF37 /* MemberVisiteCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberVisiteCodeVC.h; sourceTree = "<group>"; };
@@ -483,6 +504,7 @@
 		18423550245170DC0078C92C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				18AE2119245AB57A00DB60EC /* SDCycleScrollView */,
 				C93C7E972459B827000BF757 /* ZJScrollPageView */,
 				18CDED6B2456E34E0001DF37 /* CDDPagerController */,
 				189FD915245280C9000D1E94 /* NSUerdefult */,
@@ -692,6 +714,35 @@
 				1870AF7B245A9DB8004C1C14 /* Find.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		18AE2119245AB57A00DB60EC /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				18AE211A245AB57A00DB60EC /* UIView+SDExtension.h */,
+				18AE211E245AB57A00DB60EC /* UIView+SDExtension.m */,
+				18AE211B245AB57A00DB60EC /* SDCycleScrollView.h */,
+				18AE211D245AB57A00DB60EC /* SDCycleScrollView.m */,
+				18AE211C245AB57A00DB60EC /* SDCollectionViewCell.h */,
+				18AE211F245AB57A00DB60EC /* SDCollectionViewCell.m */,
+				18AE2120245AB57A00DB60EC /* PageControl */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		18AE2120245AB57A00DB60EC /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				18AE2126245AB57A00DB60EC /* TADotView.h */,
+				18AE2122245AB57A00DB60EC /* TADotView.m */,
+				18AE2128245AB57A00DB60EC /* TAPageControl.h */,
+				18AE2123245AB57A00DB60EC /* TAPageControl.m */,
+				18AE2124245AB57A00DB60EC /* TAAnimatedDotView.m */,
+				18AE2127245AB57A00DB60EC /* TAAnimatedDotView.h */,
+				18AE2121245AB57A00DB60EC /* TAAbstractDotView.h */,
+				18AE2125245AB57A00DB60EC /* TAAbstractDotView.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		18BB603F24596855007DF790 /* StarSecond */ = {
@@ -1138,9 +1189,11 @@
 				1842353524516FE20078C92C /* PPInterfacedConst.m in Sources */,
 				18CDEDC1245811960001DF37 /* MemberRecordShortMovieCell.m in Sources */,
 				18CDEDA22457D0530001DF37 /* MemberMyCollectShortMovieColCell.m in Sources */,
+				18AE212E245AB57A00DB60EC /* TAAnimatedDotView.m in Sources */,
 				C93C7EAF2459B827000BF757 /* ZJScrollSegmentView.m in Sources */,
 				18CDED662456B1C10001DF37 /* MemberFillMailBoxVC.m in Sources */,
 				18CDED7F2456E34E0001DF37 /* DCPagerProgressView.m in Sources */,
+				18AE212C245AB57A00DB60EC /* TADotView.m in Sources */,
 				184235572451713E0078C92C /* CYLTabBarControllerConfig.m in Sources */,
 				18CDED9E2457D0340001DF37 /* MemberMyCollectShortMovieVC.m in Sources */,
 				18CDEDB424580D4F0001DF37 /* MemberRecordLongMovieVC.m in Sources */,
@@ -1156,6 +1209,7 @@
 				1812B6F2245676480043F408 /* MemeberNoLogVC.m in Sources */,
 				18CDEE47245952010001DF37 /* FindStartSecondVC.m in Sources */,
 				1812B6FA24568E220043F408 /* MemberAccountManagerVC.m in Sources */,
+				18AE212D245AB57A00DB60EC /* TAPageControl.m in Sources */,
 				18CDEE2824594C290001DF37 /* FindStartMainVC.m in Sources */,
 				18CDEDB024580C1B0001DF37 /* MemberRecordVC.m in Sources */,
 				18CDED612456B0980001DF37 /* UIButton+direction.m in Sources */,
@@ -1165,8 +1219,10 @@
 				18CDEDAB2457D5EC0001DF37 /* MemberMyOrderCell.m in Sources */,
 				18CDED5D2456AA280001DF37 /* MemberVisiteCodeVC.m in Sources */,
 				18CDEDC62458359C0001DF37 /* MemberProvoteMainVC.m in Sources */,
+				18AE2129245AB57A00DB60EC /* SDCycleScrollView.m in Sources */,
 				1842354A245170620078C92C /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */,
 				18CDEDBD245811600001DF37 /* MemberRecordShortMovieVC.m in Sources */,
+				18AE212A245AB57A00DB60EC /* UIView+SDExtension.m in Sources */,
 				C93C7EAC2459B827000BF757 /* ZJContentView.m in Sources */,
 				189FD95C24551E48000D1E94 /* LogUserNameVC.m in Sources */,
 				18CDEDA72457D2DA0001DF37 /* MemberMyOrderVC.m in Sources */,
@@ -1183,12 +1239,14 @@
 				18CDED8F2457C0100001DF37 /* MemberMyCollectStartColCell.m in Sources */,
 				C93C7EB02459B827000BF757 /* ZJScrollPageView.m in Sources */,
 				18CDEE0A24591B250001DF37 /* MemberProvoteRuleVC.m in Sources */,
+				18AE212B245AB57A00DB60EC /* SDCollectionViewCell.m in Sources */,
 				1842354D245170620078C92C /* CYLPlusButton.m in Sources */,
 				18CDED962457CC190001DF37 /* MemberMyCollectLongMovieVC.m in Sources */,
 				1842354E245170620078C92C /* UIControl+CYLTabBarControllerExtention.m in Sources */,
 				189FD969245537F3000D1E94 /* RegMainVC.m in Sources */,
 				18BB604724597146007DF790 /* FindStartSecondDetailVC.m in Sources */,
 				1842354F245170620078C92C /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
+				18AE212F245AB57A00DB60EC /* TAAbstractDotView.m in Sources */,
 				18423554245170FE0078C92C /* RootNavigationController.m in Sources */,
 				1812B6F6245682C10043F408 /* MemberChangeVIP.m in Sources */,
 				18CDED6A2456CEEA0001DF37 /* MemberPayShensuVC.m in Sources */,

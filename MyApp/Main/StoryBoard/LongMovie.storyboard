@@ -86,14 +86,14 @@
                                     </scopeButtonTitles>
                                 </searchBar>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wz1-v7-2T1">
-                                    <rect key="frame" x="14" y="62" width="386" height="185"/>
+                                    <rect key="frame" x="14" y="62" width="386" height="158"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="185" id="vav-gK-yit"/>
+                                        <constraint firstAttribute="height" constant="158" id="vav-gK-yit"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-XU-eqi">
-                                    <rect key="frame" x="14" y="261.5" width="4" height="20"/>
+                                    <rect key="frame" x="14" y="264.5" width="4" height="20"/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="4" id="IYX-0f-3dG"/>
@@ -101,14 +101,14 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动作片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rs-7J-MEp">
-                                    <rect key="frame" x="26" y="259.5" width="374" height="24"/>
+                                    <rect key="frame" x="26" y="262.5" width="374" height="24"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="rh4-yo-mim" firstAttribute="top" secondItem="Wz1-v7-2T1" secondAttribute="bottom" id="2aB-NY-elQ"/>
+                                <constraint firstItem="rh4-yo-mim" firstAttribute="top" secondItem="Wz1-v7-2T1" secondAttribute="bottom" constant="27" id="2aB-NY-elQ"/>
                                 <constraint firstItem="Wz1-v7-2T1" firstAttribute="top" secondItem="FU5-rf-p6I" secondAttribute="bottom" constant="14" id="5xl-ti-BEi"/>
                                 <constraint firstItem="nCD-A7-3bh" firstAttribute="leading" secondItem="FU5-rf-p6I" secondAttribute="trailing" constant="10" id="6MX-ZU-xDV"/>
                                 <constraint firstItem="rh4-yo-mim" firstAttribute="leading" secondItem="Z9I-CV-Sow" secondAttribute="leading" constant="14" id="9ql-Os-XoD"/>
@@ -118,7 +118,7 @@
                                 <constraint firstItem="rJj-XU-eqi" firstAttribute="leading" secondItem="Z9I-CV-Sow" secondAttribute="leading" constant="14" id="Sa9-RI-EAa"/>
                                 <constraint firstAttribute="trailing" secondItem="rh4-yo-mim" secondAttribute="trailing" constant="14" id="Vc8-4a-ugZ"/>
                                 <constraint firstAttribute="trailing" secondItem="nCD-A7-3bh" secondAttribute="trailing" constant="14" id="XF5-NN-VYR"/>
-                                <constraint firstItem="rJj-XU-eqi" firstAttribute="top" secondItem="rh4-yo-mim" secondAttribute="bottom" constant="14" id="XRl-tf-4kH"/>
+                                <constraint firstItem="rJj-XU-eqi" firstAttribute="top" secondItem="rh4-yo-mim" secondAttribute="bottom" constant="17" id="XRl-tf-4kH"/>
                                 <constraint firstItem="7rs-7J-MEp" firstAttribute="leading" secondItem="rJj-XU-eqi" secondAttribute="trailing" constant="8" id="c2Y-Gn-Cgb"/>
                                 <constraint firstItem="nCD-A7-3bh" firstAttribute="top" secondItem="Z9I-CV-Sow" secondAttribute="top" constant="14" id="fUC-vm-9WA"/>
                                 <constraint firstItem="Wz1-v7-2T1" firstAttribute="leading" secondItem="Z9I-CV-Sow" secondAttribute="leading" constant="14" id="kpJ-W0-fzo"/>
@@ -126,6 +126,7 @@
                                 <constraint firstAttribute="trailing" secondItem="Wz1-v7-2T1" secondAttribute="trailing" constant="14" id="vsP-wG-pT4"/>
                             </constraints>
                             <connections>
+                                <outlet property="adBannerView" destination="Wz1-v7-2T1" id="laW-0k-TSD"/>
                                 <outlet property="chooseBtn" destination="nCD-A7-3bh" id="mko-hH-Xge"/>
                             </connections>
                         </collectionReusableView>
