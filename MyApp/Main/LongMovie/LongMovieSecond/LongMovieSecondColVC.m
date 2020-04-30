@@ -7,15 +7,16 @@
 //
 
 #import "LongMovieSecondColVC.h"
-#import "MemberMyCollectLongMovieColCell.h"
-
+#import "LongMovieColCell.h"
+#import "LongMovieSectionHaederColCell.h"
+#import "LongMovieSectionFooterColCell.h"
 @interface LongMovieSecondColVC ()
 
 @end
 
 @implementation LongMovieSecondColVC
 
-static NSString * const reuseIdentifier = @"MemberMyCollectLongMovieColCell";
+static NSString * const reuseIdentifier = @"LongMovieColCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,19 +52,21 @@ static NSString * const reuseIdentifier = @"MemberMyCollectLongMovieColCell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
     CGFloat widthColView = (KScreenWidth - 14*2-30) / 3.f;
-    CGFloat heightColView = (KScreenWidth - 14*2-30) / 3.f+40;
+    CGFloat heightColView = (KScreenWidth - 14*2-30) / 3.f+50;
     return CGSizeMake(widthColView, heightColView);
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     UICollectionReusableView *reusableview = nil ;
-    if (kind == UICollectionElementKindSectionFooter){
-        UICollectionReusableView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionFooter withReuseIdentifier : @"LongMovieSectionFooterColCell" forIndexPath :indexPath];
-        reusableview = footerview;
-    }
     if (kind == UICollectionElementKindSectionHeader ){
-        UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionHeader withReuseIdentifier : @"LongMovieSectionHaederColCell" forIndexPath :indexPath];
+        LongMovieSectionHaederColCell *headerView = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionHeader withReuseIdentifier : @"LongMovieSectionHaederColCell" forIndexPath :indexPath];
+        ViewRadius(headerView.chooseBtn, headerView.chooseBtn.bounds.size.height*0.5);
+        [headerView.chooseBtn buttonDistance:4.f direction:left];
         reusableview = headerView;
         return reusableview;
+    }
+    if (kind == UICollectionElementKindSectionFooter){
+        LongMovieSectionFooterColCell *footerview = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionFooter withReuseIdentifier : @"LongMovieSectionFooterColCell" forIndexPath :indexPath];
+        reusableview = footerview;
     }
     return reusableview;
 }
@@ -72,36 +75,5 @@ static NSString * const reuseIdentifier = @"MemberMyCollectLongMovieColCell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     return cell;
 }
-
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

@@ -88,16 +88,9 @@
 }
 
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
-    NSLog(@"%ld---------", index);
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Member" bundle:nil];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LongMovie" bundle:nil];
     LongMovieSecondColVC *vc = [sb instantiateViewControllerWithIdentifier:@"LongMovieSecondColVC"];
     return vc;
 }
-/*
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LogAndReg" bundle:nil];
-    LogUserNameVC *logUserNameVC = [sb instantiateViewControllerWithIdentifier:@"LogUserNameVC"];
-    [self.navigationController pushViewController:logUserNameVC animated:YES];
-}
- */
+
 @end
