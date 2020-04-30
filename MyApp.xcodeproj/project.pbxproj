@@ -29,6 +29,9 @@
 		1842354F245170620078C92C /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 18423547245170620078C92C /* UIViewController+CYLTabBarControllerExtention.m */; };
 		18423554245170FE0078C92C /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18423552245170FE0078C92C /* RootNavigationController.m */; };
 		184235572451713E0078C92C /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 184235552451713E0078C92C /* CYLTabBarControllerConfig.m */; };
+		18476383245ACA3D00FD047E /* CBSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18476381245ACA3C00FD047E /* CBSegmentView.m */; };
+		1847638B245ACACA00FD047E /* LongMovieChooseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847638A245ACACA00FD047E /* LongMovieChooseVC.m */; };
+		1847638E245ACBA700FD047E /* LongMovieChooseHaederView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847638D245ACBA700FD047E /* LongMovieChooseHaederView.m */; };
 		1861448124597AFE000B69CB /* FindStartSecondDetailCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861447F24597AFE000B69CB /* FindStartSecondDetailCell1.m */; };
 		1861448224597AFE000B69CB /* FindStartSecondDetailCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1861448024597AFE000B69CB /* FindStartSecondDetailCell1.xib */; };
 		1861448624597C2D000B69CB /* FindStartSecondDetailColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861448424597C2D000B69CB /* FindStartSecondDetailColCell.m */; };
@@ -180,6 +183,12 @@
 		184235552451713E0078C92C /* CYLTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarControllerConfig.m; sourceTree = "<group>"; };
 		184235562451713E0078C92C /* CYLTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarControllerConfig.h; sourceTree = "<group>"; };
 		18423558245173120078C92C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18476381245ACA3C00FD047E /* CBSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSegmentView.m; sourceTree = "<group>"; };
+		18476382245ACA3C00FD047E /* CBSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSegmentView.h; sourceTree = "<group>"; };
+		18476389245ACACA00FD047E /* LongMovieChooseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieChooseVC.h; sourceTree = "<group>"; };
+		1847638A245ACACA00FD047E /* LongMovieChooseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieChooseVC.m; sourceTree = "<group>"; };
+		1847638C245ACBA700FD047E /* LongMovieChooseHaederView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieChooseHaederView.h; sourceTree = "<group>"; };
+		1847638D245ACBA700FD047E /* LongMovieChooseHaederView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieChooseHaederView.m; sourceTree = "<group>"; };
 		1861447E24597AFE000B69CB /* FindStartSecondDetailCell1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindStartSecondDetailCell1.h; sourceTree = "<group>"; };
 		1861447F24597AFE000B69CB /* FindStartSecondDetailCell1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindStartSecondDetailCell1.m; sourceTree = "<group>"; };
 		1861448024597AFE000B69CB /* FindStartSecondDetailCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindStartSecondDetailCell1.xib; sourceTree = "<group>"; };
@@ -504,6 +513,7 @@
 		18423550245170DC0078C92C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				18476380245ACA3C00FD047E /* CBSegment */,
 				18AE2119245AB57A00DB60EC /* SDCycleScrollView */,
 				C93C7E972459B827000BF757 /* ZJScrollPageView */,
 				18CDED6B2456E34E0001DF37 /* CDDPagerController */,
@@ -521,6 +531,26 @@
 				18423552245170FE0078C92C /* RootNavigationController.m */,
 			);
 			path = "导航";
+			sourceTree = "<group>";
+		};
+		18476380245ACA3C00FD047E /* CBSegment */ = {
+			isa = PBXGroup;
+			children = (
+				18476382245ACA3C00FD047E /* CBSegmentView.h */,
+				18476381245ACA3C00FD047E /* CBSegmentView.m */,
+			);
+			path = CBSegment;
+			sourceTree = "<group>";
+		};
+		18476385245ACA5900FD047E /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				18476389245ACACA00FD047E /* LongMovieChooseVC.h */,
+				1847638A245ACACA00FD047E /* LongMovieChooseVC.m */,
+				1847638C245ACBA700FD047E /* LongMovieChooseHaederView.h */,
+				1847638D245ACBA700FD047E /* LongMovieChooseHaederView.m */,
+			);
+			path = Choose;
 			sourceTree = "<group>";
 		};
 		1870AF8A245AACD4004C1C14 /* LongMovieSecond */ = {
@@ -633,6 +663,7 @@
 		189FD9452454134B000D1E94 /* LongMovie */ = {
 			isa = PBXGroup;
 			children = (
+				18476385245ACA5900FD047E /* Choose */,
 				189FD94A245413F2000D1E94 /* LongMovieMainVC.h */,
 				189FD94B245413F2000D1E94 /* LongMovieMainVC.m */,
 				1870AF8A245AACD4004C1C14 /* LongMovieSecond */,
@@ -1183,6 +1214,7 @@
 				18CDED832456E3AA0001DF37 /* MemberMyCollectVC.m in Sources */,
 				1870AF90245AAD23004C1C14 /* LongMovieSectionFooterColCell.m in Sources */,
 				1861448124597AFE000B69CB /* FindStartSecondDetailCell1.m in Sources */,
+				18476383245ACA3D00FD047E /* CBSegmentView.m in Sources */,
 				18CDED7C2456E34E0001DF37 /* DCPagerConsts.m in Sources */,
 				C93C7EAE2459B827000BF757 /* ZJSegmentStyle.m in Sources */,
 				189FD95824541438000D1E94 /* MemberMainVC.m in Sources */,
@@ -1202,6 +1234,7 @@
 				C93C7EAD2459B827000BF757 /* ZJCollectionView.m in Sources */,
 				189FD96C24555753000D1E94 /* ForgetPswMainVC.m in Sources */,
 				187DC24524597527001C3672 /* FindStartSecondDetailCell.m in Sources */,
+				1847638B245ACACA00FD047E /* LongMovieChooseVC.m in Sources */,
 				189FD918245280C9000D1E94 /* WJUserdefault.m in Sources */,
 				18CDED7E2456E34E0001DF37 /* DCPagerController.m in Sources */,
 				189FD94F24541409000D1E94 /* ShortMovieMainVC.m in Sources */,
@@ -1211,6 +1244,7 @@
 				1812B6FA24568E220043F408 /* MemberAccountManagerVC.m in Sources */,
 				18AE212D245AB57A00DB60EC /* TAPageControl.m in Sources */,
 				18CDEE2824594C290001DF37 /* FindStartMainVC.m in Sources */,
+				1847638E245ACBA700FD047E /* LongMovieChooseHaederView.m in Sources */,
 				18CDEDB024580C1B0001DF37 /* MemberRecordVC.m in Sources */,
 				18CDED612456B0980001DF37 /* UIButton+direction.m in Sources */,
 				189FD91C2452812E000D1E94 /* MBProgressHUD+XY.m in Sources */,

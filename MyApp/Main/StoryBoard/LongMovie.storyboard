@@ -172,7 +172,73 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqZ-pm-a8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321.7391304347827" y="94.419642857142847"/>
+            <point key="canvasLocation" x="1264" y="-385"/>
+        </scene>
+        <!--Long Movie ChooseVC-->
+        <scene sceneID="YA0-tf-dSB">
+            <objects>
+                <collectionViewController storyboardIdentifier="LongMovieChooseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QcN-4i-tXW" customClass="LongMovieChooseVC" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="tlO-Nb-R5y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TTD-aP-xaa">
+                            <size key="itemSize" width="98" height="135"/>
+                            <size key="headerReferenceSize" width="50" height="109"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="19" minY="15" maxX="19" maxY="15"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemberMyCollectLongMovieColCell" id="0sx-3Y-QYt" customClass="MemberMyCollectLongMovieColCell">
+                                <rect key="frame" x="19" y="124" width="139" height="237"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="139" height="237"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="long" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzx-hg-O31">
+                                            <rect key="frame" x="0.0" y="0.0" width="139" height="139"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="rzx-hg-O31" secondAttribute="height" id="EcE-PM-Lyp"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华刘德华" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-F6-OcB">
+                                            <rect key="frame" x="0.0" y="146" width="139" height="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Rzn-F6-OcB" firstAttribute="leading" secondItem="0sx-3Y-QYt" secondAttribute="leading" id="DvA-ui-BTr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rzn-F6-OcB" secondAttribute="trailing" id="MEO-qZ-DVy"/>
+                                    <constraint firstAttribute="trailing" secondItem="rzx-hg-O31" secondAttribute="trailing" id="Tv0-7D-y3S"/>
+                                    <constraint firstItem="rzx-hg-O31" firstAttribute="top" secondItem="0sx-3Y-QYt" secondAttribute="top" id="c2n-my-YcS"/>
+                                    <constraint firstItem="Rzn-F6-OcB" firstAttribute="top" secondItem="rzx-hg-O31" secondAttribute="bottom" constant="7" id="pDB-lc-YcY"/>
+                                    <constraint firstItem="rzx-hg-O31" firstAttribute="leading" secondItem="0sx-3Y-QYt" secondAttribute="leading" id="wpl-fr-25k"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="m1K-vo-Myh"/>
+                                <size key="customSize" width="139" height="237"/>
+                                <connections>
+                                    <outlet property="longMovieImg" destination="rzx-hg-O31" id="GAk-re-39l"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="LongMovieChooseHaederView" id="8bl-1A-gQx" customClass="LongMovieChooseHaederView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="QcN-4i-tXW" id="hlk-Tx-x2I"/>
+                            <outlet property="delegate" destination="QcN-4i-tXW" id="T0w-ZE-snZ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s01-gx-y2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2079.7101449275365" y="-401.11607142857139"/>
         </scene>
     </scenes>
     <resources>

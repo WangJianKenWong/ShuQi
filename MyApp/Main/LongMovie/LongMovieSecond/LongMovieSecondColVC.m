@@ -11,6 +11,7 @@
 #import "LongMovieSectionHaederColCell.h"
 #import "LongMovieSectionFooterColCell.h"
 #import "SDCycleScrollView.h"
+#import "LongMovieChooseVC.h"
 
 @interface LongMovieSecondColVC ()<SDCycleScrollViewDelegate>
 
@@ -63,6 +64,7 @@ static NSString * const reuseIdentifier = @"LongMovieColCell";
         LongMovieSectionHaederColCell *headerView = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionHeader withReuseIdentifier : @"LongMovieSectionHaederColCell" forIndexPath :indexPath];
         ViewRadius(headerView.chooseBtn, headerView.chooseBtn.bounds.size.height*0.5);
         [headerView.chooseBtn buttonDistance:4.f direction:left];
+        [headerView.chooseBtn addTarget:self action:@selector(goToChoose) forControlEvents:UIControlEventTouchUpInside];
         [self addBannerView:headerView.adBannerView];
         reusableview = headerView;
         return reusableview;
@@ -94,5 +96,10 @@ static NSString * const reuseIdentifier = @"LongMovieColCell";
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     
+}
+- (void)goToChoose{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LongMovie" bundle:nil];
+    LongMovieChooseVC *longMovieChooseVC = [sb instantiateViewControllerWithIdentifier:@"LongMovieChooseVC"];
+    [self.navigationController pushViewController:longMovieChooseVC animated:YES];
 }
 @end
