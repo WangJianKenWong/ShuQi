@@ -8,7 +8,7 @@
 
 #import "LongMovieMainVC.h"
 #import "ZJScrollPageView.h"
-#import "FindStartSecondVC.h"
+#import "LongMovieSecondVC.h"
 
 @interface LongMovieMainVC ()<ZJScrollPageViewDelegate>
 
@@ -40,8 +40,15 @@
     // 设置附加按钮的背景图片
     style.extraBtnBackgroundImageName = @"long_more";
     style.segmentHeight = 88;
-    
+    style.scrollLineColor = [UIColor colorWithHexString:@"FF0000"];
+    style.scrollLineHeight = 3.33f;
+    style.titleFont = [UIFont systemFontOfSize:16];
+    style.normalTitleColor = [UIColor colorWithHexString:@"333333"];
+    style.selectedTitleColor = [UIColor colorWithHexString:@"FF0000"];
     style.autoAdjustTitlesWidth = NO;
+    style.showCover = NO;
+    style.titleMargin = 25;
+    style.coverHeight = 40;
     //显示滚动条
       style.showLine = YES;
     
@@ -50,12 +57,12 @@
     // 初始化
     CGRect scrollPageViewFrame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     __strong typeof(self) strongSelf = weakSelf;
-    self.titles = @[@"新闻头条",
-                                  @"国际要闻",
-                                  @"中国足球",
-                                  @"新闻头条",
-                                  @"国际要闻",
-                                  @"中国足球"
+    self.titles = @[@"精选",
+                                  @"动作",
+                                  @"喜剧",
+                                  @"爱情",
+                                  @"科幻",
+                                  @"恐怖"
                                   ];
     ZJScrollPageView *scrollPageView = [[ZJScrollPageView alloc] initWithFrame:scrollPageViewFrame segmentStyle:style titles:_titles parentViewController:strongSelf delegate:strongSelf];
     self.scrollPageView = scrollPageView;
@@ -83,21 +90,15 @@
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
     NSLog(@"%ld---------", index);
     if (index == 0) {
-        FindStartSecondVC *childVc = (FindStartSecondVC *)reuseViewController;
+        LongMovieSecondVC *childVc = (LongMovieSecondVC *)reuseViewController;
         if (childVc == nil) {
-            childVc = [[FindStartSecondVC alloc] init];
-            childVc.view.backgroundColor = [UIColor yellowColor];
+            childVc = [[LongMovieSecondVC alloc] init];
         }
         return childVc;
     }  else {
-        FindStartSecondVC *childVc = (FindStartSecondVC *)reuseViewController;
+        LongMovieSecondVC *childVc = (LongMovieSecondVC *)reuseViewController;
         if (childVc == nil) {
-            childVc = [[FindStartSecondVC alloc] init];
-            childVc.view.backgroundColor = [UIColor greenColor];
-        }
-        
-        if (index%2==0) {
-            childVc.view.backgroundColor = [UIColor orangeColor];
+            childVc = [[LongMovieSecondVC alloc] init];
         }
         return childVc;
     }

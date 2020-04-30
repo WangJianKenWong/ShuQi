@@ -33,6 +33,7 @@
 		1861448224597AFE000B69CB /* FindStartSecondDetailCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1861448024597AFE000B69CB /* FindStartSecondDetailCell1.xib */; };
 		1861448624597C2D000B69CB /* FindStartSecondDetailColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861448424597C2D000B69CB /* FindStartSecondDetailColCell.m */; };
 		1861448724597C2D000B69CB /* FindStartSecondDetailColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1861448524597C2D000B69CB /* FindStartSecondDetailColCell.xib */; };
+		1870AF77245A5FE3004C1C14 /* LongMovieSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870AF76245A5FE3004C1C14 /* LongMovieSecondVC.m */; };
 		187DC24524597527001C3672 /* FindStartSecondDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC24324597527001C3672 /* FindStartSecondDetailCell.m */; };
 		187DC24624597527001C3672 /* FindStartSecondDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187DC24424597527001C3672 /* FindStartSecondDetailCell.xib */; };
 		189FD918245280C9000D1E94 /* WJUserdefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD916245280C9000D1E94 /* WJUserdefault.m */; };
@@ -173,6 +174,8 @@
 		1861448324597C2D000B69CB /* FindStartSecondDetailColCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindStartSecondDetailColCell.h; sourceTree = "<group>"; };
 		1861448424597C2D000B69CB /* FindStartSecondDetailColCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindStartSecondDetailColCell.m; sourceTree = "<group>"; };
 		1861448524597C2D000B69CB /* FindStartSecondDetailColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindStartSecondDetailColCell.xib; sourceTree = "<group>"; };
+		1870AF75245A5FE3004C1C14 /* LongMovieSecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieSecondVC.h; sourceTree = "<group>"; };
+		1870AF76245A5FE3004C1C14 /* LongMovieSecondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieSecondVC.m; sourceTree = "<group>"; };
 		187DC24224597527001C3672 /* FindStartSecondDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindStartSecondDetailCell.h; sourceTree = "<group>"; };
 		187DC24324597527001C3672 /* FindStartSecondDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindStartSecondDetailCell.m; sourceTree = "<group>"; };
 		187DC24424597527001C3672 /* FindStartSecondDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindStartSecondDetailCell.xib; sourceTree = "<group>"; };
@@ -581,6 +584,8 @@
 			children = (
 				189FD94A245413F2000D1E94 /* LongMovieMainVC.h */,
 				189FD94B245413F2000D1E94 /* LongMovieMainVC.m */,
+				1870AF75245A5FE3004C1C14 /* LongMovieSecondVC.h */,
+				1870AF76245A5FE3004C1C14 /* LongMovieSecondVC.m */,
 			);
 			path = LongMovie;
 			sourceTree = "<group>";
@@ -1093,6 +1098,7 @@
 				18CDED7D2456E34E0001DF37 /* UIView+DCPagerFrame.m in Sources */,
 				18CDED832456E3AA0001DF37 /* MemberMyCollectVC.m in Sources */,
 				1861448124597AFE000B69CB /* FindStartSecondDetailCell1.m in Sources */,
+				1870AF77245A5FE3004C1C14 /* LongMovieSecondVC.m in Sources */,
 				18CDED7C2456E34E0001DF37 /* DCPagerConsts.m in Sources */,
 				C93C7EAE2459B827000BF757 /* ZJSegmentStyle.m in Sources */,
 				189FD95824541438000D1E94 /* MemberMainVC.m in Sources */,
