@@ -7,78 +7,66 @@
 //
 
 #import "FindStartSecondVC.h"
-#import "FindStartSecondCell.h"
+#import "FindStartSecondHeaderView.h"
+#import "FindStartSecondFooterView.h"
 
-@interface FindStartSecondVC ()<UITableViewDelegate, UITableViewDataSource>
-
-@property (nonatomic, strong) UITableView *tableView;
+@interface FindStartSecondVC ()
 
 @end
 
 @implementation FindStartSecondVC
 
+static NSString * const reuseIdentifier = @"FindStartSecondCell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.tableView];
-    self.view.backgroundColor = [UIColor colorWithHexString:@"F4F4F4"];
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 20.f;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 32.f;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 152;
+    ViewRadius(_longMovieImg, 7.f);
+    self.collectionView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-100);
 }
 
-- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *view = [UIView new];
-    view.backgroundColor = [UIColor colorWithHexString:@"F4F4F4"];
-    UILabel *titleLab = [[UILabel alloc]initWithFrame:CGRectMake(14, 0, 30, 20)];
-    titleLab.text = @"A";
-    titleLab.font = [UIFont systemFontOfSize:12];
-    titleLab.textColor = [UIColor colorWithHexString:@"333333"];
-    [view addSubview:titleLab];
-    return view;
+
+#pragma mark <UICollectionViewDataSource>
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 3;
 }
-- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIView *view = [UIView new];
-    view.backgroundColor = [UIColor whiteColor];
-    UIButton *moreBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH*0.5-100, 0, 200, 32.f)];
-    [moreBtn setTitleColor:[UIColor colorWithHexString:@"333333"] forState:UIControlStateNormal];
-    [moreBtn setTitle:@"展开更多" forState:UIControlStateNormal];
-    moreBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-    [moreBtn setImage:ImageNamed(@"find_more") forState:UIControlStateNormal];
-    [moreBtn setImage:ImageNamed(@"find_more") forState:UIControlStateHighlighted];
-    [moreBtn buttonDistance:6.8 direction:right];
-    [view addSubview:moreBtn];
-    return view;
-}
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return 10;
 }
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
+{
+    return CGSizeMake(KScreenWidth, 20.f);
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+{
+    return CGSizeMake(KScreenWidth, 32.f);
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FindStartSecondCell *cell = [[NSBundle mainBundle]loadNibNamed:@"FindStartSecondCell" owner:nil options:nil][0];
-    cell.currentVC = self;
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    CGFloat widthColView = (KScreenWidth - 19*6) / 3.f;
+    CGFloat heightColView = (KScreenWidth - 19*6) / 3.f+45;
+    return CGSizeMake(widthColView, heightColView);
+}
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    UICollectionReusableView *reusableview = nil ;
+    if (kind == UICollectionElementKindSectionHeader ){
+        FindStartSecondHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionHeader withReuseIdentifier : @"FindStartSecondHeaderView" forIndexPath :indexPath];
+        reusableview = headerView;
+        return reusableview;
+    }
+    if (kind == UICollectionElementKindSectionFooter){
+        FindStartSecondFooterView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionFooter withReuseIdentifier : @"FindStartSecondFooterView" forIndexPath :indexPath];
+        [footerview.moreBtn buttonDistance:6.67f direction:right];
+        reusableview = footerview;
+    }
+    return reusableview;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     return cell;
 }
-//懒加载
-- (UITableView *)tableView{
-    if (!_tableView) {
-         CGFloat heightY= kIs_iPhoneX?88:64;
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -32, self.view.width, self.view.height-heightY-68) style:UITableViewStyleGrouped];
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.tableFooterView = [UIView new];
-        _tableView.tableHeaderView = [UIView new];
-        _tableView.delegate = self;
-        _tableView.backgroundColor = [UIColor colorWithHexString:@"F4F4F4"];
-        _tableView.dataSource = self;
-    }
-    return _tableView;
-}
+
 @end

@@ -6,5 +6,5 @@ pod 'IQKeyboardManager'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'Masonry'
 pod 'YYKit'
-
+pod 'SDWebImage', '>= 5.0.0'
 end

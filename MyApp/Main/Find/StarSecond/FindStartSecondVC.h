@@ -11,7 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FindStartSecondVC : UIViewController<ZJScrollPageViewChildVcDelegate>
+@interface FindStartSecondVC : UICollectionViewController<ZJScrollPageViewChildVcDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *longMovieImg;
+@property (weak, nonatomic) IBOutlet UIButton *moreBtn;
 
 @end
 

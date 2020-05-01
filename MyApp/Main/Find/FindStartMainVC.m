@@ -54,16 +54,14 @@
 - (NSInteger)numberOfChildViewControllers {
     return self.titles.count;
 }
+
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
-    UIViewController<ZJScrollPageViewChildVcDelegate> *childVc = reuseViewController;
-    
-    if (!childVc) {
-        childVc = [[FindStartSecondVC alloc] init];
-    }
-    childVc.view.backgroundColor = [UIColor whiteColor];
-    
+//    UIViewController<ZJScrollPageViewChildVcDelegate> *childVc = reuseViewController;
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Find" bundle:nil];
+    FindStartSecondVC *childVc = [sb instantiateViewControllerWithIdentifier:@"FindStartSecondVC"];
     return childVc;
 }
+
 - (BOOL)shouldAutomaticallyForwardAppearanceMethods {
     return NO;
 }

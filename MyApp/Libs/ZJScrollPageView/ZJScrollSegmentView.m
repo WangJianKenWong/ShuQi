@@ -277,11 +277,9 @@ static CGFloat const contentSizeXOff = 20.0;
     CGFloat coverW = firstLabel.zj_width;
     CGFloat coverH = self.segmentStyle.coverHeight;
     CGFloat coverY = (self.bounds.size.height - coverH) * 0.5;
-    
     if (self.scrollLine) {
-        
         if (self.segmentStyle.isScrollTitle) {
-            self.scrollLine.frame = CGRectMake(coverX , self.zj_height - self.segmentStyle.scrollLineHeight, coverW , self.segmentStyle.scrollLineHeight);
+            self.scrollLine.frame = CGRectMake(coverX , self.zj_height - self.segmentStyle.scrollLineHeight - 20, coverW , self.segmentStyle.scrollLineHeight);
 
         } else {
             if (self.segmentStyle.isAdjustCoverOrLineWidth) {
@@ -289,7 +287,7 @@ static CGFloat const contentSizeXOff = 20.0;
                 coverX = (firstLabel.zj_width - coverW) * 0.5;
             }
 
-            self.scrollLine.frame = CGRectMake(coverX , self.zj_height - self.segmentStyle.scrollLineHeight, coverW , self.segmentStyle.scrollLineHeight);
+            self.scrollLine.frame = CGRectMake(coverX , self.zj_height - self.segmentStyle.scrollLineHeight - 20, coverW , self.segmentStyle.scrollLineHeight);
 
         }
         
