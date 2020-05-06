@@ -25,7 +25,7 @@
     [self settingIQKeyBoard];
     CYLTabBarControllerConfig *tabBarControllerConfig = [[CYLTabBarControllerConfig alloc] init];
     CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
-    tabBarController.selectedIndex = 0;
+    tabBarController.selectedIndex = 4;
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

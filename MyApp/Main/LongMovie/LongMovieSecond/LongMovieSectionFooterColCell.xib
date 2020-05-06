@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="LongMovieSectionFooterColCell" id="Eed-Ui-SPT" customClass="LongMovieSectionFooterColCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRO-PI-TtP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="201"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kp-hC-FH6">
+                            <rect key="frame" x="0.0" y="15" width="207" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="S4c-ud-HhO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="查看更多视频" image="long_right">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6V7-ta-Khk">
+                            <rect key="frame" x="207" y="15" width="207" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="iYv-ce-vUk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <state key="normal" title="换一换" image="long_other">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6V7-ta-Khk" firstAttribute="leading" secondItem="9Kp-hC-FH6" secondAttribute="trailing" id="1yz-gC-4t6"/>
+                        <constraint firstItem="9Kp-hC-FH6" firstAttribute="leading" secondItem="zRO-PI-TtP" secondAttribute="leading" id="KZz-M4-xym"/>
+                        <constraint firstItem="6V7-ta-Khk" firstAttribute="top" secondItem="zRO-PI-TtP" secondAttribute="top" constant="15" id="Mnz-3l-Tu6"/>
+                        <constraint firstItem="9Kp-hC-FH6" firstAttribute="width" secondItem="zRO-PI-TtP" secondAttribute="width" multiplier="0.5" id="XLf-Jr-RZi"/>
+                        <constraint firstAttribute="trailing" secondItem="6V7-ta-Khk" secondAttribute="trailing" id="e3v-W1-KV2"/>
+                        <constraint firstItem="9Kp-hC-FH6" firstAttribute="top" secondItem="zRO-PI-TtP" secondAttribute="top" constant="15" id="tnt-re-hl6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动作片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-sj-54r">
+                    <rect key="frame" x="26" y="92" width="61.5" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2EZ-ys-W3Q">
+                    <rect key="frame" x="14" y="94" width="4" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Ocd-UU-iIF"/>
+                        <constraint firstAttribute="width" constant="4" id="ZXN-mf-Apz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="N5a-sj-54r" firstAttribute="centerY" secondItem="2EZ-ys-W3Q" secondAttribute="centerY" id="4cN-MZ-4X7"/>
+                <constraint firstItem="zRO-PI-TtP" firstAttribute="leading" secondItem="Eed-Ui-SPT" secondAttribute="leading" id="QWR-5k-YWh"/>
+                <constraint firstAttribute="bottom" secondItem="zRO-PI-TtP" secondAttribute="bottom" id="TAk-vv-6dv"/>
+                <constraint firstItem="zRO-PI-TtP" firstAttribute="top" secondItem="Eed-Ui-SPT" secondAttribute="top" id="Ws4-Xk-eIB"/>
+                <constraint firstItem="N5a-sj-54r" firstAttribute="leading" secondItem="2EZ-ys-W3Q" secondAttribute="trailing" constant="8" id="Ysb-yv-y5N"/>
+                <constraint firstItem="2EZ-ys-W3Q" firstAttribute="leading" secondItem="ic8-I3-zG6" secondAttribute="leading" constant="14" id="rgG-Pd-L3F"/>
+                <constraint firstItem="2EZ-ys-W3Q" firstAttribute="top" secondItem="ic8-I3-zG6" secondAttribute="top" constant="50" id="s5h-lm-QhZ"/>
+                <constraint firstAttribute="trailing" secondItem="zRO-PI-TtP" secondAttribute="trailing" id="xJD-Jw-PJI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ic8-I3-zG6"/>
+            <connections>
+                <outlet property="moreBtn" destination="9Kp-hC-FH6" id="EGC-FG-i5d"/>
+                <outlet property="otherBtn" destination="6V7-ta-Khk" id="RsH-Tn-1oe"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="102.12053571428571"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="long_other" width="14" height="14"/>
+        <image name="long_right" width="8" height="14.5"/>
+    </resources>
+</document>
