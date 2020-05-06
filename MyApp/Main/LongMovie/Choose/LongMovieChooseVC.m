@@ -8,7 +8,6 @@
 
 #import "LongMovieChooseVC.h"
 #import "LongMovieChooseHaederView.h"
-#import "CBSegmentView.h"
 
 @interface LongMovieChooseVC ()
 
@@ -26,7 +25,11 @@ static NSString * const reuseIdentifier = @"MemberMyCollectLongMovieColCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"筛选";
-//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    UINib *headerNib = [UINib nibWithNibName: @"LongMovieChooseHaederView"
+                                      bundle: [NSBundle mainBundle]];
+    [self.collectionView registerNib: headerNib
+          forSupplementaryViewOfKind: UICollectionElementKindSectionHeader
+                 withReuseIdentifier: @"LongMovieChooseHaederView"];
 }
 
 
@@ -53,51 +56,12 @@ static NSString * const reuseIdentifier = @"MemberMyCollectLongMovieColCell";
     
     if (kind == UICollectionElementKindSectionHeader ){
         LongMovieChooseHaederView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionHeader withReuseIdentifier : @"LongMovieChooseHaederView" forIndexPath :indexPath];
-        [self setupHeaderView:headerView];
         reusableview = headerView;
         return reusableview;
     }
     return reusableview;
 }
-- (void)setupHeaderView:(UIView *)headerView{
-    NSArray *array=@[
-                         @"第一",
-                         @"第二次",
-                         @"第三匹马",
-                         @"第四首歌曲",
-                         @"第五块香酥饼",
-                         @"第六碗米饭",
-                         @"第七支舞",
-                         @"第八回",
-                         @"第九"
-                         ];
-    CBSegmentView *sliderSegmentView1 = [[CBSegmentView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 176*0.25)];
-        [headerView addSubview:sliderSegmentView1];
-        [sliderSegmentView1 setTitleArray:array withStyle:CBSegmentStyleSlider];
-        sliderSegmentView1.titleChooseReturn = ^(NSInteger x) {
-          NSLog(@"点击了第%ld个按钮",x+1);
-        };
-        
-        CBSegmentView *sliderSegmentView2 = [[CBSegmentView alloc]initWithFrame:CGRectMake(0, 176*0.25, self.view.frame.size.width, 176*0.25)];
-        [headerView addSubview:sliderSegmentView2];
-        [sliderSegmentView2 setTitleArray:array withStyle:CBSegmentStyleSlider];
-        sliderSegmentView2.titleChooseReturn = ^(NSInteger x) {
-            NSLog(@"点击了第%ld个按钮",x+1);
-        };
-        
-        CBSegmentView *sliderSegmentView3 = [[CBSegmentView alloc]initWithFrame:CGRectMake(0, 176*0.5, self.view.frame.size.width, 176*0.25)];
-        [headerView addSubview:sliderSegmentView3];
-        [sliderSegmentView3 setTitleArray:array withStyle:CBSegmentStyleSlider];
-        sliderSegmentView3.titleChooseReturn = ^(NSInteger x) {
-            NSLog(@"点击了第%ld个按钮",x+1);
-        };
-    CBSegmentView *sliderSegmentView4 = [[CBSegmentView alloc]initWithFrame:CGRectMake(0, 176*0.75, self.view.frame.size.width, 176*0.25)];
-    [headerView addSubview:sliderSegmentView4];
-    [sliderSegmentView4 setTitleArray:array withStyle:CBSegmentStyleSlider];
-    sliderSegmentView4.titleChooseReturn = ^(NSInteger x) {
-        NSLog(@"点击了第%ld个按钮",x+1);
-    };
-}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     return cell;

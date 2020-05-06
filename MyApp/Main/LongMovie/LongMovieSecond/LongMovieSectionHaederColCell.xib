@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LongMovieSectionHaederColCell" id="Voh-kU-ZgO" customClass="LongMovieSectionHaederColCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmh-vR-OSZ">
+                    <rect key="frame" x="336" y="14" width="64" height="28"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="5Vl-fp-3Dz"/>
+                        <constraint firstAttribute="height" constant="28" id="ke4-64-weR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="筛选" image="long_choose">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZG-ad-B0s">
+                    <rect key="frame" x="14" y="247" width="386" height="0.5"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.34999999999999998" id="7Cb-AN-9da"/>
+                    </constraints>
+                </view>
+                <searchBar contentMode="scaleToFill" searchBarStyle="minimal" placeholder="搜索" scopeBarBackgroundImage="long_search" translatesAutoresizingMaskIntoConstraints="NO" id="XaR-vo-exS">
+                    <rect key="frame" x="14" y="8" width="312" height="40"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HBc-1s-yoC"/>
+                    </constraints>
+                    <offsetWrapper key="searchTextPositionAdjustment" horizontal="6" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQ7-t8-ve8">
+                    <rect key="frame" x="14" y="62" width="386" height="158"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="QNp-bm-3cg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTN-Cq-pSA">
+                    <rect key="frame" x="14" y="264.5" width="4" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="3Gn-PP-Cf1"/>
+                        <constraint firstAttribute="height" constant="20" id="t4X-Hk-HY3"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动作片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jo-eM-BZF">
+                    <rect key="frame" x="26" y="262.5" width="374" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VZG-ad-B0s" firstAttribute="top" secondItem="eQ7-t8-ve8" secondAttribute="bottom" constant="27" id="3kK-Vr-i0e"/>
+                <constraint firstItem="XaR-vo-exS" firstAttribute="leading" secondItem="Voh-kU-ZgO" secondAttribute="leading" constant="14" id="BMA-oq-Ewk"/>
+                <constraint firstAttribute="trailing" secondItem="8jo-eM-BZF" secondAttribute="trailing" constant="14" id="HFd-lp-bqs"/>
+                <constraint firstItem="nmh-vR-OSZ" firstAttribute="centerY" secondItem="XaR-vo-exS" secondAttribute="centerY" id="Iyo-Bf-MJg"/>
+                <constraint firstItem="VZG-ad-B0s" firstAttribute="leading" secondItem="Voh-kU-ZgO" secondAttribute="leading" constant="14" id="Loh-A0-20u"/>
+                <constraint firstItem="sTN-Cq-pSA" firstAttribute="top" secondItem="VZG-ad-B0s" secondAttribute="bottom" constant="17" id="Lqc-38-r0D"/>
+                <constraint firstAttribute="trailing" secondItem="VZG-ad-B0s" secondAttribute="trailing" constant="14" id="S5M-mK-QGM"/>
+                <constraint firstAttribute="trailing" secondItem="nmh-vR-OSZ" secondAttribute="trailing" constant="14" id="UBZ-9p-pq6"/>
+                <constraint firstItem="nmh-vR-OSZ" firstAttribute="leading" secondItem="XaR-vo-exS" secondAttribute="trailing" constant="10" id="Xkr-dw-zlG"/>
+                <constraint firstAttribute="trailing" secondItem="eQ7-t8-ve8" secondAttribute="trailing" constant="14" id="bf3-BE-ehQ"/>
+                <constraint firstItem="nmh-vR-OSZ" firstAttribute="top" secondItem="Voh-kU-ZgO" secondAttribute="top" constant="14" id="lC8-E9-YVu"/>
+                <constraint firstItem="eQ7-t8-ve8" firstAttribute="leading" secondItem="Voh-kU-ZgO" secondAttribute="leading" constant="14" id="pOM-8Q-ifY"/>
+                <constraint firstItem="sTN-Cq-pSA" firstAttribute="leading" secondItem="Voh-kU-ZgO" secondAttribute="leading" constant="14" id="qFF-Mc-GYa"/>
+                <constraint firstItem="eQ7-t8-ve8" firstAttribute="top" secondItem="XaR-vo-exS" secondAttribute="bottom" constant="14" id="qXt-wd-7t7"/>
+                <constraint firstItem="8jo-eM-BZF" firstAttribute="leading" secondItem="sTN-Cq-pSA" secondAttribute="trailing" constant="8" id="raE-Sd-L9I"/>
+                <constraint firstItem="8jo-eM-BZF" firstAttribute="centerY" secondItem="sTN-Cq-pSA" secondAttribute="centerY" id="vVa-Mb-A9p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZQT-iF-C2L"/>
+            <connections>
+                <outlet property="adBannerView" destination="eQ7-t8-ve8" id="3PF-sb-fAE"/>
+                <outlet property="chooseBtn" destination="nmh-vR-OSZ" id="fQO-5z-ZO4"/>
+                <outlet property="searchBar" destination="XaR-vo-exS" id="uzj-lc-X1J"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="-31"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="long_choose" width="13" height="12.5"/>
+        <image name="long_search" width="12" height="12"/>
+    </resources>
+</document>

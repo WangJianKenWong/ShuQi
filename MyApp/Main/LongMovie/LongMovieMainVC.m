@@ -9,6 +9,7 @@
 #import "LongMovieMainVC.h"
 #import "ZJScrollPageView.h"
 #import "LongMovieSecondColVC.h"
+#import "LongMovieAllSectionVC.h"
 
 @interface LongMovieMainVC ()<ZJScrollPageViewDelegate>
 
@@ -66,11 +67,14 @@
                                   ];
     ZJScrollPageView *scrollPageView = [[ZJScrollPageView alloc] initWithFrame:scrollPageViewFrame segmentStyle:style titles:_titles parentViewController:strongSelf delegate:strongSelf];
     self.scrollPageView = scrollPageView;
-            // 额外的按钮响应的block
-    //        [strongSelf.scrollPageView setSelectedIndex:1 animated:true];
+    //
     self.scrollPageView.extraBtnOnClick = ^(UIButton *extraBtn){
-//        weakSelf.title = @"点击了extraBtn";
-                NSLog(@"点击了extraBtn");
+        LongMovieAllSectionVC *longMovieAllSectionVC = [LongMovieAllSectionVC new];
+        longMovieAllSectionVC.block = ^(int selectIndex) {
+            // 额外的按钮响应的block
+            [strongSelf.scrollPageView setSelectedIndex:selectIndex animated:true];
+        };
+        [self.navigationController pushViewController:longMovieAllSectionVC animated:YES];
     };
     [self.view addSubview:strongSelf.scrollPageView];
 }

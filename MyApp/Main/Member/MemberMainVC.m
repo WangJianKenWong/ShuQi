@@ -13,6 +13,7 @@
 #import "MemberRecordVC.h"
 
 @interface MemberMainVC ()
+
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UIView *centerView;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
@@ -53,6 +54,11 @@
     }
     self.tableView.contentOffset = offset;
 }
+//vip
+- (IBAction)goToVip:(id)sender {
+    [self goToMemberDetailVC:@"MemberVIPTabVC"];
+}
+
 //推广
 - (IBAction)goToProvote:(id)sender {
     [self goToMemberDetailVC:@"MemberProvoteMainVC"];

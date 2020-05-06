@@ -10,6 +10,20 @@
 		1812B6F2245676480043F408 /* MemeberNoLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812B6F1245676480043F408 /* MemeberNoLogVC.m */; };
 		1812B6F6245682C10043F408 /* MemberChangeVIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812B6F5245682C10043F408 /* MemberChangeVIP.m */; };
 		1812B6FA24568E220043F408 /* MemberAccountManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812B6F924568E220043F408 /* MemberAccountManagerVC.m */; };
+		182A8EC12462568900E5ECC3 /* LongMovieSectionHaederColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EBF2462568900E5ECC3 /* LongMovieSectionHaederColCell.m */; };
+		182A8EC22462568900E5ECC3 /* LongMovieSectionHaederColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A8EC02462568900E5ECC3 /* LongMovieSectionHaederColCell.xib */; };
+		182A8EC6246259B000E5ECC3 /* LongMovieChooseHaederView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EC4246259B000E5ECC3 /* LongMovieChooseHaederView.m */; };
+		182A8EC7246259B000E5ECC3 /* LongMovieChooseHaederView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A8EC5246259B000E5ECC3 /* LongMovieChooseHaederView.xib */; };
+		182A8ECB24625C6300E5ECC3 /* LongMovieSectionFooterColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EC924625C6300E5ECC3 /* LongMovieSectionFooterColCell.m */; };
+		182A8ECC24625C6300E5ECC3 /* LongMovieSectionFooterColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A8ECA24625C6300E5ECC3 /* LongMovieSectionFooterColCell.xib */; };
+		182A8ED02462861200E5ECC3 /* MemberVIPTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8ECF2462861200E5ECC3 /* MemberVIPTabVC.m */; };
+		182A8ED7246292FF00E5ECC3 /* MemberVIPColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8ED5246292FF00E5ECC3 /* MemberVIPColCell.m */; };
+		182A8ED8246292FF00E5ECC3 /* MemberVIPColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A8ED6246292FF00E5ECC3 /* MemberVIPColCell.xib */; };
+		182A8EDC2462A20900E5ECC3 /* LongMovieAllSectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EDB2462A20900E5ECC3 /* LongMovieAllSectionVC.m */; };
+		182A8EDF2462AA2400E5ECC3 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EDD2462AA2400E5ECC3 /* UIButton+Block.m */; };
+		182A8EE32462AB5800E5ECC3 /* MemberPayDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EE22462AB5800E5ECC3 /* MemberPayDetailVC.m */; };
+		182A8EE62462B54300E5ECC3 /* MemberPaySuccessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EE52462B54300E5ECC3 /* MemberPaySuccessVC.m */; };
+		182A8EE92462B71900E5ECC3 /* MemberPayWaitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A8EE82462B71900E5ECC3 /* MemberPayWaitVC.m */; };
 		184234F724516D8E0078C92C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184234F624516D8E0078C92C /* AppDelegate.m */; };
 		1842350024516D8E0078C92C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184234FE24516D8E0078C92C /* Main.storyboard */; };
 		1842350224516D910078C92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1842350124516D910078C92C /* Assets.xcassets */; };
@@ -31,7 +45,6 @@
 		184235572451713E0078C92C /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 184235552451713E0078C92C /* CYLTabBarControllerConfig.m */; };
 		18476383245ACA3D00FD047E /* CBSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18476381245ACA3C00FD047E /* CBSegmentView.m */; };
 		1847638B245ACACA00FD047E /* LongMovieChooseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847638A245ACACA00FD047E /* LongMovieChooseVC.m */; };
-		1847638E245ACBA700FD047E /* LongMovieChooseHaederView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847638D245ACBA700FD047E /* LongMovieChooseHaederView.m */; };
 		1861448124597AFE000B69CB /* FindStartSecondDetailCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861447F24597AFE000B69CB /* FindStartSecondDetailCell1.m */; };
 		1861448224597AFE000B69CB /* FindStartSecondDetailCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1861448024597AFE000B69CB /* FindStartSecondDetailCell1.xib */; };
 		1861448624597C2D000B69CB /* FindStartSecondDetailColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861448424597C2D000B69CB /* FindStartSecondDetailColCell.m */; };
@@ -41,8 +54,6 @@
 		1870AF84245AA42F004C1C14 /* FindStartSecondHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870AF83245AA42F004C1C14 /* FindStartSecondHeaderView.m */; };
 		1870AF87245AA49D004C1C14 /* FindStartSecondFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870AF86245AA49D004C1C14 /* FindStartSecondFooterView.m */; };
 		1870AF89245AAC03004C1C14 /* LongMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870AF88245AAC03004C1C14 /* LongMovie.storyboard */; };
-		1870AF8D245AAD0A004C1C14 /* LongMovieSectionHaederColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870AF8C245AAD0A004C1C14 /* LongMovieSectionHaederColCell.m */; };
-		1870AF90245AAD23004C1C14 /* LongMovieSectionFooterColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870AF8F245AAD23004C1C14 /* LongMovieSectionFooterColCell.m */; };
 		1870AF93245AAD44004C1C14 /* LongMovieColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870AF92245AAD44004C1C14 /* LongMovieColCell.m */; };
 		187DC24524597527001C3672 /* FindStartSecondDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC24324597527001C3672 /* FindStartSecondDetailCell.m */; };
 		187DC24624597527001C3672 /* FindStartSecondDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187DC24424597527001C3672 /* FindStartSecondDetailCell.xib */; };
@@ -141,6 +152,30 @@
 		1812B6F5245682C10043F408 /* MemberChangeVIP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberChangeVIP.m; sourceTree = "<group>"; };
 		1812B6F824568E220043F408 /* MemberAccountManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberAccountManagerVC.h; sourceTree = "<group>"; };
 		1812B6F924568E220043F408 /* MemberAccountManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberAccountManagerVC.m; sourceTree = "<group>"; };
+		182A8EBE2462568900E5ECC3 /* LongMovieSectionHaederColCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieSectionHaederColCell.h; sourceTree = "<group>"; };
+		182A8EBF2462568900E5ECC3 /* LongMovieSectionHaederColCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieSectionHaederColCell.m; sourceTree = "<group>"; };
+		182A8EC02462568900E5ECC3 /* LongMovieSectionHaederColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LongMovieSectionHaederColCell.xib; sourceTree = "<group>"; };
+		182A8EC3246259B000E5ECC3 /* LongMovieChooseHaederView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieChooseHaederView.h; sourceTree = "<group>"; };
+		182A8EC4246259B000E5ECC3 /* LongMovieChooseHaederView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieChooseHaederView.m; sourceTree = "<group>"; };
+		182A8EC5246259B000E5ECC3 /* LongMovieChooseHaederView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LongMovieChooseHaederView.xib; sourceTree = "<group>"; };
+		182A8EC824625C6300E5ECC3 /* LongMovieSectionFooterColCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieSectionFooterColCell.h; sourceTree = "<group>"; };
+		182A8EC924625C6300E5ECC3 /* LongMovieSectionFooterColCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieSectionFooterColCell.m; sourceTree = "<group>"; };
+		182A8ECA24625C6300E5ECC3 /* LongMovieSectionFooterColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LongMovieSectionFooterColCell.xib; sourceTree = "<group>"; };
+		182A8ECE2462861200E5ECC3 /* MemberVIPTabVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberVIPTabVC.h; sourceTree = "<group>"; };
+		182A8ECF2462861200E5ECC3 /* MemberVIPTabVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberVIPTabVC.m; sourceTree = "<group>"; };
+		182A8ED4246292FF00E5ECC3 /* MemberVIPColCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberVIPColCell.h; sourceTree = "<group>"; };
+		182A8ED5246292FF00E5ECC3 /* MemberVIPColCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberVIPColCell.m; sourceTree = "<group>"; };
+		182A8ED6246292FF00E5ECC3 /* MemberVIPColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberVIPColCell.xib; sourceTree = "<group>"; };
+		182A8EDA2462A20900E5ECC3 /* LongMovieAllSectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieAllSectionVC.h; sourceTree = "<group>"; };
+		182A8EDB2462A20900E5ECC3 /* LongMovieAllSectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieAllSectionVC.m; sourceTree = "<group>"; };
+		182A8EDD2462AA2400E5ECC3 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		182A8EDE2462AA2400E5ECC3 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
+		182A8EE12462AB5800E5ECC3 /* MemberPayDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberPayDetailVC.h; sourceTree = "<group>"; };
+		182A8EE22462AB5800E5ECC3 /* MemberPayDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberPayDetailVC.m; sourceTree = "<group>"; };
+		182A8EE42462B54300E5ECC3 /* MemberPaySuccessVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberPaySuccessVC.h; sourceTree = "<group>"; };
+		182A8EE52462B54300E5ECC3 /* MemberPaySuccessVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberPaySuccessVC.m; sourceTree = "<group>"; };
+		182A8EE72462B71900E5ECC3 /* MemberPayWaitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberPayWaitVC.h; sourceTree = "<group>"; };
+		182A8EE82462B71900E5ECC3 /* MemberPayWaitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberPayWaitVC.m; sourceTree = "<group>"; };
 		184234F224516D8E0078C92C /* 练习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "练习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184234F524516D8E0078C92C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		184234F624516D8E0078C92C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -187,8 +222,6 @@
 		18476382245ACA3C00FD047E /* CBSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSegmentView.h; sourceTree = "<group>"; };
 		18476389245ACACA00FD047E /* LongMovieChooseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieChooseVC.h; sourceTree = "<group>"; };
 		1847638A245ACACA00FD047E /* LongMovieChooseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieChooseVC.m; sourceTree = "<group>"; };
-		1847638C245ACBA700FD047E /* LongMovieChooseHaederView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieChooseHaederView.h; sourceTree = "<group>"; };
-		1847638D245ACBA700FD047E /* LongMovieChooseHaederView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieChooseHaederView.m; sourceTree = "<group>"; };
 		1861447E24597AFE000B69CB /* FindStartSecondDetailCell1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindStartSecondDetailCell1.h; sourceTree = "<group>"; };
 		1861447F24597AFE000B69CB /* FindStartSecondDetailCell1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindStartSecondDetailCell1.m; sourceTree = "<group>"; };
 		1861448024597AFE000B69CB /* FindStartSecondDetailCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindStartSecondDetailCell1.xib; sourceTree = "<group>"; };
@@ -203,10 +236,6 @@
 		1870AF85245AA49D004C1C14 /* FindStartSecondFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindStartSecondFooterView.h; sourceTree = "<group>"; };
 		1870AF86245AA49D004C1C14 /* FindStartSecondFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindStartSecondFooterView.m; sourceTree = "<group>"; };
 		1870AF88245AAC03004C1C14 /* LongMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LongMovie.storyboard; sourceTree = "<group>"; };
-		1870AF8B245AAD0A004C1C14 /* LongMovieSectionHaederColCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieSectionHaederColCell.h; sourceTree = "<group>"; };
-		1870AF8C245AAD0A004C1C14 /* LongMovieSectionHaederColCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieSectionHaederColCell.m; sourceTree = "<group>"; };
-		1870AF8E245AAD23004C1C14 /* LongMovieSectionFooterColCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieSectionFooterColCell.h; sourceTree = "<group>"; };
-		1870AF8F245AAD23004C1C14 /* LongMovieSectionFooterColCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieSectionFooterColCell.m; sourceTree = "<group>"; };
 		1870AF91245AAD44004C1C14 /* LongMovieColCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongMovieColCell.h; sourceTree = "<group>"; };
 		1870AF92245AAD44004C1C14 /* LongMovieColCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongMovieColCell.m; sourceTree = "<group>"; };
 		187DC24224597527001C3672 /* FindStartSecondDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindStartSecondDetailCell.h; sourceTree = "<group>"; };
@@ -399,6 +428,41 @@
 			path = AccountManager;
 			sourceTree = "<group>";
 		};
+		182A8ECD246285D600E5ECC3 /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				182A8EE02462AB3C00E5ECC3 /* PayDetail */,
+				182A8ECE2462861200E5ECC3 /* MemberVIPTabVC.h */,
+				182A8ECF2462861200E5ECC3 /* MemberVIPTabVC.m */,
+				182A8ED4246292FF00E5ECC3 /* MemberVIPColCell.h */,
+				182A8ED5246292FF00E5ECC3 /* MemberVIPColCell.m */,
+				182A8ED6246292FF00E5ECC3 /* MemberVIPColCell.xib */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		182A8ED92462A1C900E5ECC3 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				182A8EDA2462A20900E5ECC3 /* LongMovieAllSectionVC.h */,
+				182A8EDB2462A20900E5ECC3 /* LongMovieAllSectionVC.m */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		182A8EE02462AB3C00E5ECC3 /* PayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				182A8EE12462AB5800E5ECC3 /* MemberPayDetailVC.h */,
+				182A8EE22462AB5800E5ECC3 /* MemberPayDetailVC.m */,
+				182A8EE42462B54300E5ECC3 /* MemberPaySuccessVC.h */,
+				182A8EE52462B54300E5ECC3 /* MemberPaySuccessVC.m */,
+				182A8EE72462B71900E5ECC3 /* MemberPayWaitVC.h */,
+				182A8EE82462B71900E5ECC3 /* MemberPayWaitVC.m */,
+			);
+			path = PayDetail;
+			sourceTree = "<group>";
+		};
 		184234E924516D8E0078C92C = {
 			isa = PBXGroup;
 			children = (
@@ -547,8 +611,9 @@
 			children = (
 				18476389245ACACA00FD047E /* LongMovieChooseVC.h */,
 				1847638A245ACACA00FD047E /* LongMovieChooseVC.m */,
-				1847638C245ACBA700FD047E /* LongMovieChooseHaederView.h */,
-				1847638D245ACBA700FD047E /* LongMovieChooseHaederView.m */,
+				182A8EC3246259B000E5ECC3 /* LongMovieChooseHaederView.h */,
+				182A8EC4246259B000E5ECC3 /* LongMovieChooseHaederView.m */,
+				182A8EC5246259B000E5ECC3 /* LongMovieChooseHaederView.xib */,
 			);
 			path = Choose;
 			sourceTree = "<group>";
@@ -560,10 +625,12 @@
 				1870AF79245A6E90004C1C14 /* LongMovieSecondColVC.m */,
 				1870AF91245AAD44004C1C14 /* LongMovieColCell.h */,
 				1870AF92245AAD44004C1C14 /* LongMovieColCell.m */,
-				1870AF8B245AAD0A004C1C14 /* LongMovieSectionHaederColCell.h */,
-				1870AF8C245AAD0A004C1C14 /* LongMovieSectionHaederColCell.m */,
-				1870AF8E245AAD23004C1C14 /* LongMovieSectionFooterColCell.h */,
-				1870AF8F245AAD23004C1C14 /* LongMovieSectionFooterColCell.m */,
+				182A8EBE2462568900E5ECC3 /* LongMovieSectionHaederColCell.h */,
+				182A8EBF2462568900E5ECC3 /* LongMovieSectionHaederColCell.m */,
+				182A8EC02462568900E5ECC3 /* LongMovieSectionHaederColCell.xib */,
+				182A8EC824625C6300E5ECC3 /* LongMovieSectionFooterColCell.h */,
+				182A8EC924625C6300E5ECC3 /* LongMovieSectionFooterColCell.m */,
+				182A8ECA24625C6300E5ECC3 /* LongMovieSectionFooterColCell.xib */,
 			);
 			path = LongMovieSecond;
 			sourceTree = "<group>";
@@ -663,6 +730,7 @@
 		189FD9452454134B000D1E94 /* LongMovie */ = {
 			isa = PBXGroup;
 			children = (
+				182A8ED92462A1C900E5ECC3 /* All */,
 				18476385245ACA5900FD047E /* Choose */,
 				189FD94A245413F2000D1E94 /* LongMovieMainVC.h */,
 				189FD94B245413F2000D1E94 /* LongMovieMainVC.m */,
@@ -705,6 +773,7 @@
 		189FD949245413B5000D1E94 /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				182A8ECD246285D600E5ECC3 /* VIP */,
 				18CDEDC3245835730001DF37 /* Provote */,
 				18CDEDAD24580BF20001DF37 /* Record */,
 				18CDEDA42457D2BB0001DF37 /* MyOrder */,
@@ -801,6 +870,8 @@
 		18CDED622456B0A30001DF37 /* Button_direction */ = {
 			isa = PBXGroup;
 			children = (
+				182A8EDE2462AA2400E5ECC3 /* UIButton+Block.h */,
+				182A8EDD2462AA2400E5ECC3 /* UIButton+Block.m */,
 				18CDED602456B0970001DF37 /* UIButton+direction.h */,
 				18CDED5F2456B0970001DF37 /* UIButton+direction.m */,
 			);
@@ -1145,15 +1216,19 @@
 				18CDEDAC2457D5EC0001DF37 /* MemberMyOrderCell.xib in Resources */,
 				187DC24624597527001C3672 /* FindStartSecondDetailCell.xib in Resources */,
 				1842350224516D910078C92C /* Assets.xcassets in Resources */,
+				182A8ED8246292FF00E5ECC3 /* MemberVIPColCell.xib in Resources */,
 				189FD96E24555BC6000D1E94 /* Member.storyboard in Resources */,
+				182A8ECC24625C6300E5ECC3 /* LongMovieSectionFooterColCell.xib in Resources */,
 				189FD96024551E86000D1E94 /* LogAndReg.storyboard in Resources */,
 				18CDEDB924580D910001DF37 /* MemberRecordLongMovieCell.xib in Resources */,
 				1870AF89245AAC03004C1C14 /* LongMovie.storyboard in Resources */,
 				18CDED902457C0100001DF37 /* MemberMyCollectStartColCell.xib in Resources */,
 				18CDED9B2457CC390001DF37 /* MemberMyCollectLongMovieColCell.xib in Resources */,
 				1842350024516D8E0078C92C /* Main.storyboard in Resources */,
+				182A8EC7246259B000E5ECC3 /* LongMovieChooseHaederView.xib in Resources */,
 				18CDEDA32457D0530001DF37 /* MemberMyCollectShortMovieColCell.xib in Resources */,
 				1861448224597AFE000B69CB /* FindStartSecondDetailCell1.xib in Resources */,
+				182A8EC22462568900E5ECC3 /* LongMovieSectionHaederColCell.xib in Resources */,
 				1870AF7C245A9DB8004C1C14 /* Find.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1212,11 +1287,11 @@
 				18423549245170620078C92C /* UIView+CYLTabBarControllerExtention.m in Sources */,
 				18CDED7D2456E34E0001DF37 /* UIView+DCPagerFrame.m in Sources */,
 				18CDED832456E3AA0001DF37 /* MemberMyCollectVC.m in Sources */,
-				1870AF90245AAD23004C1C14 /* LongMovieSectionFooterColCell.m in Sources */,
 				1861448124597AFE000B69CB /* FindStartSecondDetailCell1.m in Sources */,
 				18476383245ACA3D00FD047E /* CBSegmentView.m in Sources */,
 				18CDED7C2456E34E0001DF37 /* DCPagerConsts.m in Sources */,
 				C93C7EAE2459B827000BF757 /* ZJSegmentStyle.m in Sources */,
+				182A8EE32462AB5800E5ECC3 /* MemberPayDetailVC.m in Sources */,
 				189FD95824541438000D1E94 /* MemberMainVC.m in Sources */,
 				1842353524516FE20078C92C /* PPInterfacedConst.m in Sources */,
 				18CDEDC1245811960001DF37 /* MemberRecordShortMovieCell.m in Sources */,
@@ -1237,14 +1312,16 @@
 				1847638B245ACACA00FD047E /* LongMovieChooseVC.m in Sources */,
 				189FD918245280C9000D1E94 /* WJUserdefault.m in Sources */,
 				18CDED7E2456E34E0001DF37 /* DCPagerController.m in Sources */,
+				182A8EDF2462AA2400E5ECC3 /* UIButton+Block.m in Sources */,
 				189FD94F24541409000D1E94 /* ShortMovieMainVC.m in Sources */,
 				189FD92024528193000D1E94 /* AppDelegate+Serve.m in Sources */,
 				1812B6F2245676480043F408 /* MemeberNoLogVC.m in Sources */,
 				18CDEE47245952010001DF37 /* FindStartSecondVC.m in Sources */,
 				1812B6FA24568E220043F408 /* MemberAccountManagerVC.m in Sources */,
 				18AE212D245AB57A00DB60EC /* TAPageControl.m in Sources */,
+				182A8EC12462568900E5ECC3 /* LongMovieSectionHaederColCell.m in Sources */,
+				182A8EC6246259B000E5ECC3 /* LongMovieChooseHaederView.m in Sources */,
 				18CDEE2824594C290001DF37 /* FindStartMainVC.m in Sources */,
-				1847638E245ACBA700FD047E /* LongMovieChooseHaederView.m in Sources */,
 				18CDEDB024580C1B0001DF37 /* MemberRecordVC.m in Sources */,
 				18CDED612456B0980001DF37 /* UIButton+direction.m in Sources */,
 				189FD91C2452812E000D1E94 /* MBProgressHUD+XY.m in Sources */,
@@ -1265,12 +1342,14 @@
 				18CDEDB824580D910001DF37 /* MemberRecordLongMovieCell.m in Sources */,
 				18CDEE0D2459208D0001DF37 /* MemberProvoteDetailVC.m in Sources */,
 				189FD96324553338000D1E94 /* AppDelegate+IQKeyBoard.m in Sources */,
+				182A8EDC2462A20900E5ECC3 /* LongMovieAllSectionVC.m in Sources */,
 				1842354C245170620078C92C /* CYLTabBar.m in Sources */,
 				1861448624597C2D000B69CB /* FindStartSecondDetailColCell.m in Sources */,
-				1870AF8D245AAD0A004C1C14 /* LongMovieSectionHaederColCell.m in Sources */,
 				1842353624516FE20078C92C /* PPHTTPRequest.m in Sources */,
+				182A8ED7246292FF00E5ECC3 /* MemberVIPColCell.m in Sources */,
 				189FD95524541427000D1E94 /* CollectMainVC.m in Sources */,
 				18CDED8F2457C0100001DF37 /* MemberMyCollectStartColCell.m in Sources */,
+				182A8ED02462861200E5ECC3 /* MemberVIPTabVC.m in Sources */,
 				C93C7EB02459B827000BF757 /* ZJScrollPageView.m in Sources */,
 				18CDEE0A24591B250001DF37 /* MemberProvoteRuleVC.m in Sources */,
 				18AE212B245AB57A00DB60EC /* SDCollectionViewCell.m in Sources */,
@@ -1285,9 +1364,12 @@
 				1812B6F6245682C10043F408 /* MemberChangeVIP.m in Sources */,
 				18CDED6A2456CEEA0001DF37 /* MemberPayShensuVC.m in Sources */,
 				1870AF93245AAD44004C1C14 /* LongMovieColCell.m in Sources */,
+				182A8ECB24625C6300E5ECC3 /* LongMovieSectionFooterColCell.m in Sources */,
+				182A8EE92462B71900E5ECC3 /* MemberPayWaitVC.m in Sources */,
 				189FD9662455368E000D1E94 /* LogMailBoxVC.m in Sources */,
 				189FD95224541418000D1E94 /* FindMainVC.m in Sources */,
 				C93C7EAA2459B827000BF757 /* ZJTitleView.m in Sources */,
+				182A8EE62462B54300E5ECC3 /* MemberPaySuccessVC.m in Sources */,
 				189FD9222452865A000D1E94 /* main.m in Sources */,
 				1842353824516FE20078C92C /* PPNetworkCache.m in Sources */,
 				1870AF84245AA42F004C1C14 /* FindStartSecondHeaderView.m in Sources */,

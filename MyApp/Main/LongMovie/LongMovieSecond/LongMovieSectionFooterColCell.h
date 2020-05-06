@@ -2,7 +2,7 @@
 //  LongMovieSectionFooterColCell.h
 //  MyApp
 //
-//  Created by apple on 2020/4/30.
+//  Created by apple on 2020/5/6.
 //  Copyright © 2020 tii. All rights reserved.
 //
 
@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LongMovieSectionFooterColCell : UICollectionReusableView
+@property (weak, nonatomic) IBOutlet UIButton *moreBtn;
+@property (weak, nonatomic) IBOutlet UIButton *otherBtn;
 
 @end
 
