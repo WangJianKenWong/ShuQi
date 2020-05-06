@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 typedef NS_ENUM(NSInteger, TitleImagePosition) {
     TitleImagePositionLeft,
     TitleImagePositionRight,
@@ -25,7 +26,6 @@ typedef NS_OPTIONS(NSInteger, SegmentViewComponent) {
     SegmentViewComponentGraduallyChangeTitleColor = 1 << 7,
     SegmentViewComponentAdjustCoverOrLineWidth = 1 << 8,
     SegmentViewComponentAutoAdjustTitlesWidth = 1 << 9,
-    
 };
 
 @interface ZJSegmentStyle : NSObject
